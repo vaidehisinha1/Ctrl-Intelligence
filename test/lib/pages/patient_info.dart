@@ -17,7 +17,7 @@ class _AutofillDemoState extends State<AutofillDemo> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Autofill'),
+        title: const Text('General Patient info'),
       ),
       body: Form(
         key: _formKey,
