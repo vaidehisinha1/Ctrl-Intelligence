@@ -48,8 +48,8 @@ class _AutofillDemoState extends State<AutofillDemo> {
                       keyboardType: TextInputType.emailAddress,
                       textInputAction: TextInputAction.next,
                       decoration: InputDecoration(
-                        hintText: 'Family History',
-                        labelText: 'Father / Mother / Null',
+                        hintText: ' Father / Mother / Null',
+                        labelText: 'Family History',
                       ),
                       autofillHints: [AutofillHints.email],
                     ),
