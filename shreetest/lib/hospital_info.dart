@@ -11,7 +11,12 @@ class hospital_info extends StatefulWidget {
 
 class _hospital_infoState extends State<hospital_info> {
   final _formKey = GlobalKey<FormState>();
-
+   String _currentItemSelected = 'Select a department';
+  final _currencies = ['Select a department','Allergists', 'Anesthesiologists', 'Cardiologists', 'Colon and Rectal Surgeons', 'Dermatologists','Dentist','Endocrinologists','Gastroenterologists', 'Hematologists','Infectious Disease Specialists','Internists','Medical Geneticists','Nephrologists','Neurologists','Obstetricians and Gynecologists','Oncologists','Ophthalmologists','Osteopaths','Otolaryngologists','Orthopaedic surgeon','Pathologists','Pediatricians','Physiatrists','Plastic Surgeons','Podiatrists','Preventive Medicine Specialists','Psychiatrists','Pulmonologists','Radiologists','Rheumatologists','Sports Medicine Specialists','General Surgeons','Urologists','Veterinarian'];
+  
+  String _current = 'Select a hospital';
+  final _hosp = ['Select a hospital','hoa', 'hob','hoc', 'hod','hoe', 'hob'];
+  // String? _current = 'Rupees';
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -26,24 +31,64 @@ class _hospital_infoState extends State<hospital_info> {
             child: AutofillGroup(
               child: Column(
                 children: [
+                 
                   ...[
-                    TextFormField(
-                      autofocus: true,
-                      textInputAction: TextInputAction.next,
-                      decoration: const InputDecoration(
-                        hintText: 'Apollo Hospital',
-                        labelText: 'Hospital Name',
-                      ),
-                      autofillHints: const [AutofillHints.givenName],
+                    Align(
+                      alignment: Alignment.topLeft,
+                      child: DropdownButton(
+                        hint: Text('sample'),
+                        isExpanded: true,
+                                           items: _hosp.map((String dropDownStringItem) {
+                          return DropdownMenuItem(
+                            value:dropDownStringItem,
+                            child:  Text(dropDownStringItem),
+                          );
+                                           } ).toList(),
+                                           onChanged: (String? newValueSelected) {
+                          setState(() {
+                             // ignore: unnecessary_this
+                             this._current = newValueSelected!;
+                          });
+                                           },
+                                          value: _current,
+                                         ),
                     ),
-                    TextFormField(
-                      textInputAction: TextInputAction.next,
-                      decoration: const InputDecoration(
-                        hintText: 'diabetologist',
-                        labelText: 'Which Department',
-                      ),
-                      autofillHints: const [AutofillHints.familyName],
-                    ),
+                    // TextFormField(
+                    //   autofocus: true,
+                    //   textInputAction: TextInputAction.next,
+                    //   decoration: const InputDecoration(
+                    //     hintText: 'Apollo Hospital',
+                    //     labelText: 'Hospital Name',
+                    //   ),
+                    //   autofillHints: const [AutofillHints.givenName],
+                    // ),
+                    // TextFormField(
+                    //   textInputAction: TextInputAction.next,
+                    //   decoration: const InputDecoration(
+                    //     hintText: 'diabetologist',
+                    //     labelText: 'Which Department',
+                    //   ),
+                    //   autofillHints: const [AutofillHints.familyName],
+                    // ),
+                     Align(
+                       alignment: Alignment.topLeft,
+                       child: DropdownButton(
+                         isExpanded: true,
+                                         items: _currencies.map((String dropDownStringItem) {
+                        return DropdownMenuItem(
+                          value:dropDownStringItem,
+                          child:  Text(dropDownStringItem),
+                        );
+                                         } ).toList(),
+                                         onChanged: (String? newValueSelected) {
+                        setState(() {
+                           // ignore: unnecessary_this
+                           this._currentItemSelected = newValueSelected!;
+                        });
+                                         },
+                                        value: _currentItemSelected,
+                                       ),
+                     ),
                     const TextField(
                       keyboardType: TextInputType.emailAddress,
                       textInputAction: TextInputAction.next,
