@@ -30,7 +30,63 @@ class _PendSenState extends State<PendSen> {
       appBar: AppBar(
         title: Text("Pending Sent Referrals"),
       ),
-      body: Center(),
+      body: Center(
+      child: Card(
+        child: Column(
+          //mainAxisSize: MainAxisSize.min,
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          children: <Widget>[
+            const ListTile(
+              leading: Icon(Icons.pending),
+              title: Text('Disha Seth'),
+              subtitle: Text('Apollo Hospital, Pune: Cardiologist'),
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.end,
+              children: <Widget>[
+                Text('Send: 10th April 21'),
+                const SizedBox(width: 1),
+                const SizedBox(width: 5),
+              ],
+            ),
+            Divider(
+              height: 10.0,
+              color: Colors.black,
+            ),
+            const ListTile(
+              leading: Icon(Icons.pending),
+              title: Text('Ravi Shankar'),
+              subtitle: Text('Sassoon Hospital, Pune: Gastroenterologists'),
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.end,
+              children: <Widget>[
+                Text('Send: 1th April 21'),
+                const SizedBox(width: 1),
+                const SizedBox(width: 5),
+              ],
+            ),
+             Divider(
+              height: 10.0,
+              color: Colors.black,
+            ),
+            const ListTile(
+              leading: Icon(Icons.pending),
+              title: Text('Laxmi Patil'),
+              subtitle: Text('Nair Hospital, Mumbai: Neurologists'),
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.end,
+              children: <Widget>[
+                Text('Send: 29th March 21'),
+                const SizedBox(width: 1),
+                const SizedBox(width: 5),
+              ],
+            ),
+          ],
+        ),
+      ),
+      ),
     );
   }
 }
