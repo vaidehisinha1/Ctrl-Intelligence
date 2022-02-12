@@ -22,7 +22,7 @@ class _DiseaseDiscState extends State<DiseaseDisc> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Form widgets'),
+        title: const Text('Detailed Diagnosis'),
         centerTitle: true,
         backgroundColor: Colors.purple[300],
       ),
@@ -121,22 +121,7 @@ class _DiseaseDiscState extends State<DiseaseDisc> {
                                 style: Theme.of(context).textTheme.subtitle1),
                           ],
                         ),
-                        Row(
-                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                          crossAxisAlignment: CrossAxisAlignment.center,
-                          children: [
-                            Text('Enable feature',
-                                style: Theme.of(context).textTheme.bodyText1),
-                            Switch(
-                              value: enableFeature,
-                              onChanged: (enabled) {
-                                setState(() {
-                                  enableFeature = enabled;
-                                });
-                              },
-                            ),
-                          ],
-                        ),
+
                       ].expand(
                             (widget) => [
                           widget,

@@ -32,7 +32,7 @@ class _MyHomePageState extends State<MyHomePage> {
     return new Scaffold(
       appBar: new AppBar(
           backgroundColor: Colors.lightBlue[400],
-          title:new Text('HOSPITAL REFERAL SYSTEM',textAlign: TextAlign.center,)
+          title:new Text('KUSHALKSHEM',textAlign: TextAlign.center,)
       ),
       body: Padding(
         padding: const EdgeInsets.all(12.0),
@@ -49,22 +49,33 @@ class _MyHomePageState extends State<MyHomePage> {
               width: 250,
               decoration: BoxDecoration(
                   color: Colors.blue),
-              child: FlatButton(
-                onPressed: () {
+              child: FlatButton.icon(
+                icon: Icon(Icons.add,size: 40,),//icon image
+                label: Text('Referral Add',style: TextStyle(color: Colors.white, fontSize: 25)),//text to show in button
+                textColor: Colors.white,//button text and icon color.
+                color: Colors.green,//button background color
+                onPressed: ()  {
                   Navigator.push(
                       context, MaterialPageRoute(builder: (_) => hospital_info()));
                 },
-                child:
-                    Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Icon(Icons.add),
-                          Text("Referral Add",
-                            style: TextStyle(color: Colors.white, fontSize: 30),
-                          )
-                      ],
-                    )
               ),
+        ),
+
+            Container(
+              height: 50,
+              width: 250,
+              decoration: BoxDecoration(
+                  color: Colors.blue),
+              child: FlatButton.icon(
+                icon: Icon(Icons.dynamic_form,size:40),//icon image
+                label: Text('Referral Edit',style: TextStyle(color: Colors.white, fontSize: 25)),//text to show in button
+                textColor: Colors.white,//button text and icon color.
+                color: Colors.green,//button background color
+                onPressed: () {
+                  Navigator.push(
+                      context, MaterialPageRoute(builder: (_) => EditInfo()));
+                },
+            ),
             ),
 
             Container(
@@ -72,67 +83,33 @@ class _MyHomePageState extends State<MyHomePage> {
               width: 250,
               decoration: BoxDecoration(
                   color: Colors.blue),
-              child: FlatButton(
-                  onPressed: () {
-                    Navigator.push(
-                        context, MaterialPageRoute(builder: (_) => EdInfo()));
-                  },
-                  child:
-                  Column(
-                    children: [
-                      Icon(Icons.add),
-                      Text(
-                        'Referral Edit',
-                        style: TextStyle(color: Colors.white, fontSize: 25),
-                      ),
-                    ],
-                  )
+              child: FlatButton.icon(
+                icon: Icon(Icons.send,size: 40,),//icon image
+                label: Text('Referral Sent',style: TextStyle(color: Colors.white, fontSize: 25)),//text to show in button
+                textColor: Colors.white,//button text and icon color.
+                color: Colors.green,//button background color
+                onPressed: () {
+                  Navigator.push(
+                      context, MaterialPageRoute(builder: (_) => SenRef()));
+                },
               ),
             ),
+
 
             Container(
               height: 50,
               width: 250,
               decoration: BoxDecoration(
                   color: Colors.blue),
-              child: FlatButton(
-                  onPressed: () {
-                    Navigator.push(
-                        context, MaterialPageRoute(builder: (_) => SenRef()));
-                  },
-                  child:
-                  Column(
-                    children: [
-                      Icon(Icons.add),
-                      Text(
-                        'Referral Sent',
-                        style: TextStyle(color: Colors.white, fontSize: 25),
-                      ),
-                    ],
-                  )
-              ),
-            ),
-
-            Container(
-              height: 50,
-              width: 250,
-              decoration: BoxDecoration(
-                  color: Colors.blue),
-              child: FlatButton(
-                  onPressed: () {
-                    Navigator.push(
-                        context, MaterialPageRoute(builder: (_) => RecRef()));
-                  },
-                  child:
-                  Column(
-                    children: [
-                      Icon(Icons.add),
-                      Text(
-                        'Referral Received',
-                        style: TextStyle(color: Colors.white, fontSize: 25),
-                      ),
-                    ],
-                  )
+              child: FlatButton.icon(
+                icon: Icon(Icons.input_rounded,size:40),//icon image
+                label: Text('Referral Received',style: TextStyle(color: Colors.white, fontSize: 25)),//text to show in button
+                textColor: Colors.white,//button text and icon color.
+                color: Colors.green,//button background color
+                onPressed: () {
+                  Navigator.push(
+                      context, MaterialPageRoute(builder: (_) => RecRef()));
+                },
               ),
             ),
           ],
@@ -143,10 +120,10 @@ class _MyHomePageState extends State<MyHomePage> {
         child: ListView(
           children: <Widget>[
             new UserAccountsDrawerHeader(
-              accountName: new Text('HOSPITAL NAME'),
+              decoration: BoxDecoration(color:Colors.grey,),
+              accountName: new Text('Kamla Nehru Hospital'),
               accountEmail: new Text('hospital@mail.com'),
-              currentAccountPicture: new CircleAvatar(
-              ),
+              currentAccountPicture: Image.asset('assets/K.png')
             ),
             new ListTile(
               title: new Text('ABOUT PAGE'),
@@ -218,3 +195,4 @@ class _MyHomePageState extends State<MyHomePage> {
     );
   }
 }
+
