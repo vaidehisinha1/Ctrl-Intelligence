@@ -33,7 +33,7 @@ class EditInfo extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: <Widget>[
             const ListTile(
-              leading: Icon(Icons.local_hospital),
+              leading: Icon(Icons.edit),
               title: Text('Ram Kumar'),
               subtitle: Text('Apollo Hospital, Pune: Cardiologist\n2nd July 21'),
             ),
@@ -46,18 +46,22 @@ class EditInfo extends StatelessWidget {
                     Navigator.push(context, MaterialPageRoute(builder: (context) => hospital_info()));
                   },
                 ),
-                const SizedBox(width: 8),
+                const SizedBox(width: 1),
                 TextButton(
                   child: const Text('Edit medical info'),
                   onPressed: () {
                     Navigator.push(context, MaterialPageRoute(builder: (context) => AutofillDemo()));
                   },
                 ),
-                const SizedBox(width: 8),
+                const SizedBox(width: 5),
               ],
             ),
+            Divider(
+              height: 10.0,
+              color: Colors.black,
+            ),
             const ListTile(
-              leading: Icon(Icons.local_hospital),
+              leading: Icon(Icons.edit),
               title: Text('Ravi Shankar'),
               subtitle: Text('Sassoon Hospital, Pune: Gastroenterologists\n3rd August 21'),
             ),
@@ -70,18 +74,22 @@ class EditInfo extends StatelessWidget {
                     Navigator.push(context, MaterialPageRoute(builder: (context) => hospital_info()));
                   },
                 ),
-                const SizedBox(width: 8),
+                const SizedBox(width: 1),
                 TextButton(
                   child: const Text('Edit medical info'),
                   onPressed: () {
                     Navigator.push(context, MaterialPageRoute(builder: (context) => AutofillDemo()));
                   },
                 ),
-                const SizedBox(width: 8),
+                const SizedBox(width: 5),
               ],
             ),
+             Divider(
+              height: 10.0,
+              color: Colors.black,
+            ),
             const ListTile(
-              leading: Icon(Icons.local_hospital),
+              leading: Icon(Icons.edit),
               title: Text('Laxmi Patil'),
               subtitle: Text('Nair Hospital, Mumbai: Neurologists\n20th October'),
             ),
@@ -94,14 +102,14 @@ class EditInfo extends StatelessWidget {
                     Navigator.push(context, MaterialPageRoute(builder: (context) => hospital_info()));
                   },
                 ),
-                const SizedBox(width: 8),
+                const SizedBox(width: 1),
                 TextButton(
                   child: const Text('Edit medical info'),
                   onPressed: () {
                     Navigator.push(context, MaterialPageRoute(builder: (context) => AutofillDemo()));
                   },
                 ),
-                const SizedBox(width: 8),
+                const SizedBox(width: 5),
               ],
             ),
           ],
