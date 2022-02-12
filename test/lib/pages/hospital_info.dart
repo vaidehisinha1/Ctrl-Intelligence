@@ -22,7 +22,7 @@ class _hospital_infoState extends State<hospital_info> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Autofill'),
+        title: const Text('Add a new referal'),
       ),
       body: Form(
         key: _formKey,
