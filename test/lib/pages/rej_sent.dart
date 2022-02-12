@@ -73,7 +73,7 @@ class _RejSenState extends State<RejSen> {
             const ListTile(
               leading: Icon(Icons.cancel),
               title: Text('Laxmi Patil'),
-              subtitle: Text('Nair Hospital, Mumbai: Neurologists\n20th October'),
+              subtitle: Text('Nair Hospital, Mumbai: Neurologists'),
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.end,
