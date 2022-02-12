@@ -83,16 +83,24 @@ class _AutofillDemoState extends State<AutofillDemo> {
                     const TextField(
                       textInputAction: TextInputAction.next,
                       decoration: InputDecoration(
-                        hintText: 'United States',
-                        labelText: 'Country',
+                        hintText: '18',
+                        labelText: 'Age',
                       ),
                       autofillHints: [AutofillHints.countryName],
                     ),
                     const TextField(
                       keyboardType: TextInputType.number,
                       decoration: InputDecoration(
-                        hintText: '1',
-                        labelText: 'Country Code',
+                        hintText: '45',
+                        labelText: 'Weight',
+                      ),
+                      autofillHints: [AutofillHints.countryCode],
+                    ),
+                     const TextField(
+                      keyboardType: TextInputType.number,
+                      decoration: InputDecoration(
+                        hintText: '180',
+                        labelText: 'Height',
                       ),
                       autofillHints: [AutofillHints.countryCode],
                     ),
