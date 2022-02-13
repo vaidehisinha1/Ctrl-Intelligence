@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:hack/pages/home_screen.dart';
 
+// Demonstrates how to use autofill hints. The full list of hints is here:
+// https://github.com/flutter/engine/blob/master/lib/web_ui/lib/src/engine/text_editing/autofill_hint.dart
 class hospital_info extends StatefulWidget {
   const hospital_info({Key? key}) : super(key: key);
 
@@ -13,8 +14,9 @@ class _hospital_infoState extends State<hospital_info> {
    String _currentItemSelected = 'Cardiologists';
   final _currencies = ['Select a department','Allergists', 'Anesthesiologists', 'Cardiologists', 'Colon and Rectal Surgeons', 'Dermatologists','Dentist','Endocrinologists','Gastroenterologists', 'Hematologists','Infectious Disease Specialists','Internists','Medical Geneticists','Nephrologists','Neurologists','Obstetricians and Gynecologists','Oncologists','Ophthalmologists','Osteopaths','Otolaryngologists','Orthopaedic surgeon','Pathologists','Pediatricians','Physiatrists','Plastic Surgeons','Podiatrists','Preventive Medicine Specialists','Psychiatrists','Pulmonologists','Radiologists','Rheumatologists','Sports Medicine Specialists','General Surgeons','Urologists','Veterinarian'];
   
-  String _current = 'Apollo Hospital, Pune';
-  final _hosp = ['Select a hospital','Aditya Birla Memorial Hospital, Pune','Apollo Hospital, Pune','Breach Candy Hospital, Mumbai','Deccan Multispeciality Hardikar Hospital, Pune','IPC Heart Care Centre, Mumbai','Jaslok Hospital, Mumbai','Nair Hospital, Mumbai','Poona Hospital, Pune','Pristyn Care, Pune','Sassoon Hospital, Pune','S L Raheja Hospital, Mumbai'];
+  String _current = 'PHC-2';
+  final _hosp = ['Select a hospital', 'PHC-1','PHC-2','PHC-3','CHC-1','CHC-2','CHC-3','District Hospital-1','District Hospital-2','District Hospital-3'];
+  //final _hosp = ['Select a hospital','Aditya Birla Memorial Hospital, Pune','Apollo Hospital, Pune','Breach Candy Hospital, Mumbai','Deccan Multispeciality Hardikar Hospital, Pune','IPC Heart Care Centre, Mumbai','Jaslok Hospital, Mumbai','Nair Hospital, Mumbai','Poona Hospital, Pune','Pristyn Care, Pune','Sassoon Hospital, Pune','S L Raheja Hospital, Mumbai'];
   // String? _current = 'Rupees';
   @override
   Widget build(BuildContext context) {
@@ -52,6 +54,23 @@ class _hospital_infoState extends State<hospital_info> {
                                           value: _current,
                                          ),
                     ),
+                    // TextFormField(
+                    //   autofocus: true,
+                    //   textInputAction: TextInputAction.next,
+                    //   decoration: const InputDecoration(
+                    //     hintText: 'Apollo Hospital',
+                    //     labelText: 'Hospital Name',
+                    //   ),
+                    //   autofillHints: const [AutofillHints.givenName],
+                    // ),
+                    // TextFormField(
+                    //   textInputAction: TextInputAction.next,
+                    //   decoration: const InputDecoration(
+                    //     hintText: 'diabetologist',
+                    //     labelText: 'Which Department',
+                    //   ),
+                    //   autofillHints: const [AutofillHints.familyName],
+                    // ),
                      Align(
                        alignment: Alignment.topLeft,
                        child: DropdownButton(
@@ -87,24 +106,7 @@ class _hospital_infoState extends State<hospital_info> {
                         height: 24,
                       )
                     ],
-                  ),
-                  Container(
-                    height: 50,
-                    width: 250,
-                    decoration: BoxDecoration(
-                        color: Colors.blue, borderRadius: BorderRadius.circular(20)),
-                    child: FlatButton(
-                      onPressed: () {
-                        Navigator.of(context).pop();
-                        Navigator.push(
-                            context, MaterialPageRoute(builder: (_) => MyHomePage()));
-                      },
-                      child: Text(
-                        'Submit Changes',
-                        style: TextStyle(color: Colors.white, fontSize: 25),
-                      ),
-                    ),
-                  ),
+                  )
                 ],
               ),
             ),
