@@ -33,14 +33,14 @@ class _CompSenState extends State<CompSen> {
             children: <Widget>[
               const ListTile(
                 leading: Icon(Icons.done),
-                title: Text('Disha Seth'),
-                subtitle: Text('From - Apollo Hospital, Pune: Cardiologist'),
+                title: Text('Prajay Dhoka'),
+                subtitle: Text('From - Apollo Hospital, Pune: Ophthalmologists'),
               ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.end,
                 children: <Widget>[
-                  Text('Received: 22nd June 21     '),
-                  Text('Completed: 29th June 21'),
+                  Text('Received: 22nd August 21     '),
+                  Text('Completed: 29th August 21'),
                   const SizedBox(width: 1),
                   const SizedBox(width: 5),
                 ],
@@ -51,14 +51,14 @@ class _CompSenState extends State<CompSen> {
               ),
               const ListTile(
                 leading: Icon(Icons.done),
-                title: Text('Ravi Shankar'),
-                subtitle: Text('From - Sassoon Hospital, Pune: Gastroenterologists'),
+                title: Text('Prem Bhandari'),
+                subtitle: Text('S L Raheja Hospital, Mumbai: Osteopaths'),
               ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.end,
                 children: <Widget>[
-                  Text('Received: 15th May 21     '),
-                  Text('Completed: 21st May 21'),
+                  Text('Received: 15th July 21     '),
+                  Text('Completed: 21st July 21'),
                   const SizedBox(width: 1),
                   const SizedBox(width: 5),
                 ],
@@ -69,8 +69,8 @@ class _CompSenState extends State<CompSen> {
               ),
               const ListTile(
                 leading: Icon(Icons.done),
-                title: Text('Laxmi Patil'),
-                subtitle: Text('From - Nair Hospital, Mumbai: Neurologists\n20th October'),
+                title: Text('Snehal Chordiya'),
+                subtitle: Text('From - Jaslok Hospital, Mumbai, Mumbai: Neurologists'),
               ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.end,
