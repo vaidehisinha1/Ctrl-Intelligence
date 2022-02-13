@@ -22,7 +22,7 @@ class _CompSenState extends State<CompSen> {
               const ListTile(
                 leading: Icon(Icons.done),
                 title: Text('Disha Seth'),
-                subtitle: Text('Apollo Hospital, Pune: Cardiologist'),
+                subtitle: Text('District Hospital-1: Cardiologist'),
               ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.end,
@@ -40,7 +40,7 @@ class _CompSenState extends State<CompSen> {
               const ListTile(
                 leading: Icon(Icons.done),
                 title: Text('Ravi Shankar'),
-                subtitle: Text('Sassoon Hospital, Pune: Gastroenterologists'),
+                subtitle: Text('District Hospital-3: Gastroenterologists'),
               ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.end,
@@ -58,7 +58,7 @@ class _CompSenState extends State<CompSen> {
               const ListTile(
                 leading: Icon(Icons.done),
                 title: Text('Ram Dev'),
-                subtitle: Text('Nair Hospital, Mumbai: Neurologists\n20th October'),
+                subtitle: Text('District Hospital-2: Neurologists\n20th October'),
               ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.end,
