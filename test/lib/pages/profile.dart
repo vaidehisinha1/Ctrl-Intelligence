@@ -20,7 +20,7 @@ class _ProfileState extends State<Profile> {
                   Text('\nADDRESS:\n Mangalwar Peth Rd, near Kasba Post Office, Gandhinagar,Mangalwar Peth, Kasba Peth, Pune ,Maharashtra 411002',textAlign: TextAlign.center, style: TextStyle(fontSize:20)),
                   Text('\nSTATUS: \nOpen 24 Hours ',textAlign: TextAlign.center,style: TextStyle(fontSize: 20,),),
                   Text('\nCONTACT:\n 020 2550 8500',textAlign: TextAlign.center,style: TextStyle(fontSize: 20,),),
-                  Text('\nOTHER  INFO:\n COVID-19 vaccine available',textAlign: TextAlign.center,style: TextStyle(fontSize: 20,),)
+                  Text('\nOTHER  INFO:\n COVID-19 vaccine available',textAlign: TextAlign.center,style: TextStyle(fontSize: 20,),),
                 ],
               ),
             )
