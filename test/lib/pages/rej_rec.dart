@@ -1,18 +1,5 @@
 import 'package:flutter/material.dart';
-void main() => runApp(MyApp());
-class MyApp extends StatelessWidget {
-  // This widget is the root of your application.
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Rejected Received Referrals',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
-      home: RejSen(),
-    );
-  }
-}
+
 class RejSen extends StatefulWidget {
   //MyHomePage({Key key}) : super(key: key);
   @override
@@ -39,7 +26,7 @@ class _RejSenState extends State<RejSen> {
               Row(
                 mainAxisAlignment: MainAxisAlignment.end,
                 children: <Widget>[
-                  Text('Revevied: 16th May 21'),
+                  Text('16th May 21'),
                   const SizedBox(width: 1),
                   const SizedBox(width: 5),
                 ],

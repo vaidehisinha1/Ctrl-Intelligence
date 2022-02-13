@@ -28,7 +28,7 @@ class _patrecState extends State<patrec> {
                   ...[
                     const Text('Please Enter details  '),
                     TextFormField(
-                      autofocus: true,
+                      autofocus: false,
                       textInputAction: TextInputAction.next,
                       decoration: const InputDecoration(
                         hintText: 'Diabetes mellitus / Cancer',
@@ -103,6 +103,7 @@ class _patrecState extends State<patrec> {
                         color: Colors.blue, borderRadius: BorderRadius.circular(20)),
                     child: FlatButton(
                       onPressed: () {
+                        Navigator.of(context).pop();
                         Navigator.push(
                             context, MaterialPageRoute(builder: (_) => DiseaseDisc()));
                       },
