@@ -77,36 +77,19 @@ class _DiseaseDiscState extends State<DiseaseDisc> {
                           mainAxisAlignment: MainAxisAlignment.start,
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            Row(
-                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                              children: [
-                                Text(
-                                  'Estimated days of recovery ',
-                                  style: Theme.of(context).textTheme.bodyText1,
-                                ),
-                              ],
-                            ),
-                            Text(
-                              intl.NumberFormat.currency(
-                                  symbol: "\ days : ", decimalDigits: 0)
-                                  .format(maxValue),
-                              style: Theme.of(context).textTheme.subtitle1,
-                            ),
-                            Slider(
-                              min: 0,
-                              max: 730,
-                              divisions: 730,
-                              value: maxValue,
-                              onChanged: (value) {
-                                setState(() {
-                                  maxValue = value;
-                                });
-                              },
-                            ),
+
                           ],
                         ),
+                        OutlineButton.icon(
+                          icon: Icon(Icons.file_upload_outlined,size: 25,),//icon image
+                          label: Text('Upload Additional Documents',style: TextStyle(color: Colors.black, fontSize: 15)),//text to show in button
+                          textColor: Colors.black,//button text and icon color.
+                          color: Colors.white,//button background color
+                          onPressed: ()  {},
+                          shape: ContinuousRectangleBorder(side: BorderSide(style:BorderStyle.solid)),
+                        ),
                         Row(
-                          mainAxisAlignment: MainAxisAlignment.start,
+                          mainAxisAlignment: MainAxisAlignment.center,
                           crossAxisAlignment: CrossAxisAlignment.center,
                           children: [
                             Checkbox(
@@ -117,7 +100,7 @@ class _DiseaseDiscState extends State<DiseaseDisc> {
                                 });
                               },
                             ),
-                            Text('I confirm the above diagnosis to \n the best of my knowledge ',
+                            Text('I confirm the above diagnosis to \n the best of my knowledge\n ',
                                 style: Theme.of(context).textTheme.subtitle1),
                           ],
                         ),
@@ -126,7 +109,7 @@ class _DiseaseDiscState extends State<DiseaseDisc> {
                             (widget) => [
                           widget,
                           const SizedBox(
-                            height: 24,
+                            height: 15,
                           )
                         ],
                       ),
@@ -135,8 +118,10 @@ class _DiseaseDiscState extends State<DiseaseDisc> {
                         width: 250,
                         decoration: BoxDecoration(
                             color: Colors.blue, borderRadius: BorderRadius.circular(20)),
-                        child: FlatButton(
+                        child:
+                        FlatButton(
                           onPressed: () {
+                            Navigator.of(context).pop();
                             Navigator.push(
                                 context, MaterialPageRoute(builder: (_) => MyHomePage()));
                           },
@@ -146,6 +131,19 @@ class _DiseaseDiscState extends State<DiseaseDisc> {
                           ),
                         ),
                       ),
+                      // Container(
+                      //   height: 20,
+                      //   width: 100,
+                      //   decoration: BoxDecoration(
+                      //       color: Colors.blue),
+                      //   child: FlatButton.icon(
+                      //     icon: Icon(Icons.file_upload_outlined,size: 20,),//icon image
+                      //     label: Text('Upload Additional Documents',style: TextStyle(color: Colors.black, fontSize: 10)),//text to show in button
+                      //     textColor: Colors.black,//button text and icon color.
+                      //     color: Colors.white,//button background color
+                      //     onPressed: ()  {},
+                      //   ),
+                      // )
                     ],
                   ),
                 ),

@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:hack/pages/home_screen.dart';
 
-// Demonstrates how to use autofill hints. The full list of hints is here:
-// https://github.com/flutter/engine/blob/master/lib/web_ui/lib/src/engine/text_editing/autofill_hint.dart
 class hospital_info extends StatefulWidget {
   const hospital_info({Key? key}) : super(key: key);
 
@@ -53,23 +52,6 @@ class _hospital_infoState extends State<hospital_info> {
                                           value: _current,
                                          ),
                     ),
-                    // TextFormField(
-                    //   autofocus: true,
-                    //   textInputAction: TextInputAction.next,
-                    //   decoration: const InputDecoration(
-                    //     hintText: 'Apollo Hospital',
-                    //     labelText: 'Hospital Name',
-                    //   ),
-                    //   autofillHints: const [AutofillHints.givenName],
-                    // ),
-                    // TextFormField(
-                    //   textInputAction: TextInputAction.next,
-                    //   decoration: const InputDecoration(
-                    //     hintText: 'diabetologist',
-                    //     labelText: 'Which Department',
-                    //   ),
-                    //   autofillHints: const [AutofillHints.familyName],
-                    // ),
                      Align(
                        alignment: Alignment.topLeft,
                        child: DropdownButton(
@@ -105,7 +87,24 @@ class _hospital_infoState extends State<hospital_info> {
                         height: 24,
                       )
                     ],
-                  )
+                  ),
+                  Container(
+                    height: 50,
+                    width: 250,
+                    decoration: BoxDecoration(
+                        color: Colors.blue, borderRadius: BorderRadius.circular(20)),
+                    child: FlatButton(
+                      onPressed: () {
+                        Navigator.of(context).pop();
+                        Navigator.push(
+                            context, MaterialPageRoute(builder: (_) => MyHomePage()));
+                      },
+                      child: Text(
+                        'Submit Changes',
+                        style: TextStyle(color: Colors.white, fontSize: 25),
+                      ),
+                    ),
+                  ),
                 ],
               ),
             ),

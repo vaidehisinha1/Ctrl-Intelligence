@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:hack/pages/patrec.dart';
 
-// Demonstrates how to use autofill hints. The full list of hints is here:
-// https://github.com/flutter/engine/blob/master/lib/web_ui/lib/src/engine/text_editing/autofill_hint.dart
 class AutofillDemo extends StatefulWidget {
   const AutofillDemo({Key? key}) : super(key: key);
 
@@ -29,7 +27,7 @@ class _AutofillDemoState extends State<AutofillDemo> {
                 children: [
                   ...[
                     TextFormField(
-                      autofocus: true,
+                      autofocus: false,
                       textInputAction: TextInputAction.next,
                       decoration: const InputDecoration(
                         hintText: 'Jane',
@@ -120,6 +118,7 @@ class _AutofillDemoState extends State<AutofillDemo> {
                         color: Colors.blue, borderRadius: BorderRadius.circular(20)),
                     child: FlatButton(
                       onPressed: () {
+                        Navigator.of(context).pop();
                         Navigator.push(
                             context, MaterialPageRoute(builder: (_) => patrec()));
                       },
