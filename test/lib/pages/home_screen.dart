@@ -116,28 +116,14 @@ class _MyHomePageState extends State<MyHomePage> {
         ),
       ),
       drawer: new Drawer(
-        backgroundColor: Colors.lightBlue[300],
+        backgroundColor: Colors.orange[200],
         child: ListView(
           children: <Widget>[
             new UserAccountsDrawerHeader(
-              decoration: BoxDecoration(color:Colors.grey,),
+              decoration: BoxDecoration(color:Colors.green[400],),
               accountName: new Text('Kamla Nehru Hospital'),
               accountEmail: new Text('hospital@mail.com'),
               currentAccountPicture: Image.asset('assets/K.png')
-            ),
-            new ListTile(
-              title: new Text('ABOUT PAGE'),
-              onTap:(){
-                Navigator.of(context).pop();
-                Navigator.push(context, new MaterialPageRoute(
-                    builder: (BuildContext context)=>new AboutPage())
-                );
-              },
-            ),
-
-            new Divider(
-              color: Colors.black,
-              height: 5.0,
             ),
             new ListTile(
               title: new Text('PROFILE'),
@@ -145,34 +131,6 @@ class _MyHomePageState extends State<MyHomePage> {
                 Navigator.of(context).pop();
                 Navigator.push(context, new MaterialPageRoute(
                     builder: (BuildContext context)=>new Profile())
-                );
-              },
-            ),
-
-            new Divider(
-              color: Colors.black,
-              height: 5.0,
-            ),
-            new ListTile(
-              title: new Text('DOCUMENTS'),
-              onTap:(){
-                Navigator.of(context).pop();
-                Navigator.push(context, new MaterialPageRoute(
-                    builder: (BuildContext context)=>new AboutPage())
-                );
-              },
-            ),
-
-            new Divider(
-              color: Colors.black,
-              height: 5.0,
-            ),
-            new ListTile(
-              title: new Text('SETTINGS'),
-              onTap:(){
-                Navigator.of(context).pop();
-                Navigator.push(context, new MaterialPageRoute(
-                    builder: (BuildContext context)=>new AboutPage())
                 );
               },
             ),
