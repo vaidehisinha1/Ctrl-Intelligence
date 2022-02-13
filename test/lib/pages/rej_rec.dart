@@ -21,7 +21,7 @@ class _RejSenState extends State<RejSen> {
               const ListTile(
                 leading: Icon(Icons.cancel),
                 title: Text('Ravneet Kaur'),
-                subtitle: Text('IPC Heart Care Centre, Mumbai: Cardiologist'),
+                subtitle: Text('CHC-1: Cardiologist'),
               ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.end,
@@ -38,7 +38,7 @@ class _RejSenState extends State<RejSen> {
               const ListTile(
                 leading: Icon(Icons.cancel),
                 title: Text('Piyush Dhoka'),
-                subtitle: Text('Pristyn Care, Pune: Otolaryngologists'),
+                subtitle: Text('CHC-2: Otolaryngologists'),
               ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.end,
@@ -55,7 +55,7 @@ class _RejSenState extends State<RejSen> {
               const ListTile(
                 leading: Icon(Icons.cancel),
                 title: Text('Anand Lunawat'),
-                subtitle: Text('Sassoon Hospital, Pune: Gastroenterologists'),
+                subtitle: Text('PHC-1: Gastroenterologists'),
               ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.end,
