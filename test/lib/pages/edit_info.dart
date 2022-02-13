@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'edit_hosp_info.dart';
 import 'edit_medical_info.dart';
+import 'edit_hosp_info2.dart';
+import 'edit_hosp_info3.dart';
+
 
 class EditInfo extends StatelessWidget {
   const EditInfo({Key? key}) : super(key: key);
@@ -60,7 +63,8 @@ class EditInfo extends StatelessWidget {
                     child: const Text('Edit hospital info'),
                     onPressed: () {
                       Navigator.of(context).pop();
-                      Navigator.push(context, MaterialPageRoute(builder: (context) => hospital_info()));
+                      Navigator.push(context, MaterialPageRoute(builder: (context) => hospital_infoo()));
+
                     },
                   ),
                   const SizedBox(width: 1),
@@ -90,7 +94,8 @@ class EditInfo extends StatelessWidget {
                     child: const Text('Edit hospital info'),
                     onPressed: () {
                       Navigator.of(context).pop();
-                      Navigator.push(context, MaterialPageRoute(builder: (context) => hospital_info()));
+                     Navigator.push(context, MaterialPageRoute(builder: (context) => hospital_info3()));
+
                     },
                   ),
                   const SizedBox(width: 1),
