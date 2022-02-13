@@ -14,7 +14,7 @@ class _hospital_infoState extends State<hospital_info> {
   final _currencies = ['Select a department','Allergists', 'Anesthesiologists', 'Cardiologists', 'Colon and Rectal Surgeons', 'Dermatologists','Dentist','Endocrinologists','Gastroenterologists', 'Hematologists','Infectious Disease Specialists','Internists','Medical Geneticists','Nephrologists','Neurologists','Obstetricians and Gynecologists','Oncologists','Ophthalmologists','Osteopaths','Otolaryngologists','Orthopaedic surgeon','Pathologists','Pediatricians','Physiatrists','Plastic Surgeons','Podiatrists','Preventive Medicine Specialists','Psychiatrists','Pulmonologists','Radiologists','Rheumatologists','Sports Medicine Specialists','General Surgeons','Urologists','Veterinarian'];
 
   String _current = 'Select a hospital';
-  final _hosp = ['Select a hospital','Aditya Birla Memorial Hospital, Pune','Apollo Hospital, Pune','Breach Candy Hospital, Mumbai','Deccan Multispeciality Hardikar Hospital, Pune','IPC Heart Care Centre, Mumbai','Jaslok Hospital, Mumbai','Nair Hospital, Mumbai','Poona Hospital, Pune','Pristyn Care, Pune','Sassoon Hospital, Pune','S L Raheja Hospital, Mumbai'];
+  final _hosp = ['Select a hospital', 'PHC-1','PHC-2','PHC-3','CHC-1','CHC-1','CHC-2','CHC-3','District Hospital-1','District Hospital-2','District Hospital-3'];
   // String? _current = 'Rupees';
   @override
   Widget build(BuildContext context) {
