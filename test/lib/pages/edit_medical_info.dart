@@ -29,62 +29,72 @@ class _EditMedState extends State<EditMed> {
                   ...[
                     const Text('Please Enter details  '),
                     TextFormField(
+
+                      initialValue: 'Cardiovascular disease',
+                      autofocus: true,
+
                       autofocus: false,
+
                       textInputAction: TextInputAction.next,
                       decoration: const InputDecoration(
-                        hintText: 'Diabetes mellitus / Cancer',
                         labelText: 'Disease diagnosed',
                       ),
                       autofillHints: const [AutofillHints.givenName],
                     ),
                     TextFormField(
                       textInputAction: TextInputAction.next,
+                      initialValue: 'Stage B',
                       decoration: const InputDecoration(
-                        hintText: 'Stage 1 / Stage 3',
+                        //hintText: 'Stage 1 / Stage 3',
                         labelText: 'Severity',
                       ),
                       autofillHints: const [AutofillHints.familyName],
                     ),
-                    const TextField(
+                     TextFormField(
+                      initialValue: 'None',
                       keyboardType: TextInputType.emailAddress,
                       textInputAction: TextInputAction.next,
                       decoration: InputDecoration(
-                        hintText: 'Father / Mother / Null',
                         labelText: 'Family History ',
                       ),
                       autofillHints: [AutofillHints.email],
                     ),
-                    const TextField(
+                    TextFormField(
+                      initialValue: '140-90',
                       keyboardType: TextInputType.phone,
                       textInputAction: TextInputAction.next,
                       decoration: InputDecoration(
+
                         hintText: '120/80',
+
                         labelText: 'Blood Pressure Levels',
                       ),
                       autofillHints: [AutofillHints.telephoneNumber],
                     ),
-                    const TextField(
+                    TextFormField(
+                      initialValue: 'Pollen',
                       keyboardType: TextInputType.streetAddress,
                       textInputAction: TextInputAction.next,
                       decoration: InputDecoration(
-                        hintText: 'dust / pollen / null',
+                        //hintText: 'dust / pollen / null',
                         labelText: 'Allergy ',
                       ),
                       autofillHints: [AutofillHints.streetAddressLine1],
                     ),
-                    const TextField(
+                    TextFormField(
+                      initialValue: '95',
                       keyboardType: TextInputType.number,
                       textInputAction: TextInputAction.next,
                       decoration: InputDecoration(
-                        hintText: '95',
                         labelText: 'Oxygen Saturation (SpO2)',
                       ),
                       autofillHints: [AutofillHints.postalCode],
                     ),
-                    const TextField(
+                    TextFormField(
+                      initialValue: 'None',
                       textInputAction: TextInputAction.next,
                       decoration: InputDecoration(
-                        hintText: 'Sore throat / Null',
+                        //hintText: 'Sore throat / Null',
                         labelText: 'Symptoms of any other disease',
                       ),
                       autofillHints: [AutofillHints.countryName],
