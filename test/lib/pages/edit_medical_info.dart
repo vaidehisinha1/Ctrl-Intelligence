@@ -1,12 +1,14 @@
 import 'package:flutter/material.dart';
-class AutofillDemo extends StatefulWidget {
-  const AutofillDemo({Key? key}) : super(key: key);
+import 'package:hack/pages/home_screen.dart';
+
+class EditMed extends StatefulWidget {
+  const EditMed({Key? key}) : super(key: key);
 
   @override
-  _AutofillDemoState createState() => _AutofillDemoState();
+  _EditMedState createState() => _EditMedState();
 }
 
-class _AutofillDemoState extends State<AutofillDemo> {
+class _EditMedState extends State<EditMed> {
   final _formKey = GlobalKey<FormState>();
 
   @override
@@ -27,7 +29,7 @@ class _AutofillDemoState extends State<AutofillDemo> {
                   ...[
                     const Text('Please Enter details  '),
                     TextFormField(
-                      autofocus: true,
+                      autofocus: false,
                       textInputAction: TextInputAction.next,
                       decoration: const InputDecoration(
                         hintText: 'Diabetes mellitus / Cancer',
@@ -92,10 +94,27 @@ class _AutofillDemoState extends State<AutofillDemo> {
                         (widget) => [
                       widget,
                       const SizedBox(
-                        height: 24,
+                        height: 10,
                       )
                     ],
-                  )
+                  ),
+                  Container(
+                    height: 50,
+                    width: 250,
+                    decoration: BoxDecoration(
+                        color: Colors.blue, borderRadius: BorderRadius.circular(20)),
+                    child: FlatButton(
+                      onPressed: () {
+                        Navigator.of(context).pop();
+                        Navigator.push(
+                            context, MaterialPageRoute(builder: (_) => MyHomePage()));
+                      },
+                      child: Text(
+                        'Submit Changes',
+                        style: TextStyle(color: Colors.white, fontSize: 25),
+                      ),
+                    ),
+                  ),
                 ],
               ),
             ),

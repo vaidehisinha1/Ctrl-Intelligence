@@ -2,19 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:hack/pages/PhonePage.dart';
 import 'package:hack/pages/send ref.dart';
 import 'package:hack/pages/home_screen.dart';
-void main() {
-  runApp(MyApp());
-}
-
-class MyApp extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      home: LoginDemo(),
-    );
-  }
-}
 
 class LoginDemo extends StatefulWidget {
   @override
@@ -43,7 +30,7 @@ class _LoginDemoState extends State<LoginDemo> {
                     /*decoration: BoxDecoration(
                         color: Colors.red,
                         borderRadius: BorderRadius.circular(50.0)),*/
-                    child: Image.asset('assets/back.png')),
+                    child: Image.asset('assets/Logo.png')),
               ),
             ),
             Container(
@@ -94,6 +81,7 @@ class _LoginDemoState extends State<LoginDemo> {
                   color: Colors.blue, borderRadius: BorderRadius.circular(20)),
               child: FlatButton(
                 onPressed: () {
+                  Navigator.of(context).pop();
                   Navigator.push(
                       context, MaterialPageRoute(builder: (_) => MyHomePage()));
                 },

@@ -34,6 +34,7 @@ class EditInfo extends StatelessWidget {
                   TextButton(
                     child: const Text('Edit hospital info'),
                     onPressed: () {
+                      Navigator.of(context).pop();
                       Navigator.push(context, MaterialPageRoute(builder: (context) => hospital_info()));
                     },
                   ),
@@ -41,7 +42,8 @@ class EditInfo extends StatelessWidget {
                   TextButton(
                     child: const Text('Edit medical info'),
                     onPressed: () {
-                      Navigator.push(context, MaterialPageRoute(builder: (context) => AutofillDemo()));
+                      Navigator.of(context).pop();
+                      Navigator.push(context, MaterialPageRoute(builder: (context) => EditMed()));
                     },
                   ),
                   const SizedBox(width: 5),
@@ -62,14 +64,24 @@ class EditInfo extends StatelessWidget {
                   TextButton(
                     child: const Text('Edit hospital info'),
                     onPressed: () {
+
+                      
+
+                      Navigator.of(context).pop();
                       Navigator.push(context, MaterialPageRoute(builder: (context) => hospital_infoo()));
+
                     },
                   ),
                   const SizedBox(width: 1),
                   TextButton(
                     child: const Text('Edit medical info'),
                     onPressed: () {
-                      Navigator.push(context, MaterialPageRoute(builder: (context) => AutofillDemo2()));
+
+                     
+
+                      Navigator.of(context).pop();
+                       Navigator.push(context, MaterialPageRoute(builder: (context) => AutofillDemo2()));
+
                     },
                   ),
                   const SizedBox(width: 5),
@@ -90,14 +102,25 @@ class EditInfo extends StatelessWidget {
                   TextButton(
                     child: const Text('Edit hospital info'),
                     onPressed: () {
-                      Navigator.push(context, MaterialPageRoute(builder: (context) => hospital_info3()));
+
+                      
+
+                      Navigator.of(context).pop();
+                     Navigator.push(context, MaterialPageRoute(builder: (context) => hospital_info3()));
+
+
                     },
                   ),
                   const SizedBox(width: 1),
                   TextButton(
                     child: const Text('Edit medical info'),
                     onPressed: () {
+
+
+
+                      Navigator.of(context).pop();
                       Navigator.push(context, MaterialPageRoute(builder: (context) => AutofillDemo3()));
+
                     },
                   ),
                   const SizedBox(width: 5),

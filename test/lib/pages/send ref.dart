@@ -5,24 +5,6 @@ import 'package:hack/pages/rej_sent.dart';
 import 'package:hack/pages/comp_sen.dart';
 import 'package:hack/pages/rec ref.dart';
 
-void main() {
-  runApp(const MyApp());
-}
-
-class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return const MaterialApp(
-      // Hide the debug banner
-      debugShowCheckedModeBanner: false,
-      title: 'Sent Referrals',
-      home: SenRef(),
-    );
-  }
-}
-
 class SenRef extends StatefulWidget {
   const SenRef({Key? key}) : super(key: key);
 
@@ -48,10 +30,10 @@ class _SenRefState extends State<SenRef> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              const Text('Please select one of the sent referrals types:-'),
+              const Text('Please select one of the sent referrals types:-\n',style: TextStyle(fontSize: 20)),
               ListTile(
                 leading: Radio<String>(
-                  value: 'Completed',
+                  value: 'Accepted',
                   groupValue: _selectedref,
                   onChanged: (value) {
                     setState(() {
@@ -66,27 +48,9 @@ class _SenRefState extends State<SenRef> {
                     }
                   },
                 ),
-                title: const Text('Completed'),
+                title: const Text('Accepted',style: TextStyle(fontSize: 20)),
               ),
-              ListTile(
-                leading: Radio<String>(
-                  value: 'In Progress',
-                  groupValue: _selectedref,
-                  onChanged: (value) {
-                    setState(() {
-                      _selectedref = value!;
-                      navigateToPage = true;
-                    });
-                    if (navigateToPage) {
-                      Navigator.push(context,
-                          MaterialPageRoute(builder: (context) {
-                            return InProSen();
-                          }));
-                    }
-                  },
-                ),
-                title: const Text('In Progress'),
-              ),
+
               ListTile(
                 leading: Radio<String>(
                   value: 'Rejected',
@@ -104,7 +68,7 @@ class _SenRefState extends State<SenRef> {
                     }
                   },
                 ),
-                title: const Text('Rejected'),
+                title: const Text('Rejected',style: TextStyle(fontSize: 20)),
               ),
               ListTile(
                 leading: Radio<String>(
@@ -123,10 +87,9 @@ class _SenRefState extends State<SenRef> {
                     }
                   },
                 ),
-                title: const Text('Pending'),
+                title: const Text('Pending',style: TextStyle(fontSize: 20)),
               ),
-              // const SizedBox(height: 25),
-              // Text(_selectedref == 'male' ? 'Hello gentlement!' : 'Hi lady!')
+
             ],
           )),
     );

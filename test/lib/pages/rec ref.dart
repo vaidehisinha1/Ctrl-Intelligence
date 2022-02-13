@@ -3,23 +3,6 @@ import 'package:hack/pages/inpro_rec.dart';
 import 'package:hack/pages/pend_rec.dart';
 import 'package:hack/pages/rej_rec.dart';
 import 'package:hack/pages/comp_rec.dart';
-void main() {
-  runApp(const MyApp());
-}
-
-class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return const MaterialApp(
-      // Hide the debug banner
-      debugShowCheckedModeBanner: false,
-      title: 'Received Referrals',
-      home: RecRef(),
-    );
-  }
-}
 
 class RecRef extends StatefulWidget {
   const RecRef({Key? key}) : super(key: key);
@@ -47,7 +30,7 @@ class _RecRefState extends State<RecRef> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              const Text('Please select one of the sent referrals types:-'),
+              const Text('Please select one of the sent referrals types:-\n',style: TextStyle(fontSize: 20)),
               ListTile(
                 leading: Radio<String>(
                   value: 'Completed',
@@ -65,7 +48,7 @@ class _RecRefState extends State<RecRef> {
                     }
                   },
                 ),
-                title: const Text('Completed'),
+                title: const Text('Completed',style: TextStyle(fontSize: 20)),
               ),
               ListTile(
                 leading: Radio<String>(
@@ -84,7 +67,7 @@ class _RecRefState extends State<RecRef> {
                     }
                   },
                 ),
-                title: const Text('In Progress'),
+                title: const Text('In Progress', style: TextStyle(fontSize: 20),),
               ),
               ListTile(
                 leading: Radio<String>(
@@ -103,7 +86,7 @@ class _RecRefState extends State<RecRef> {
                     }
                   },
                 ),
-                title: const Text('Rejected'),
+                title: const Text('Rejected',style: TextStyle(fontSize: 20)),
               ),
               ListTile(
                 leading: Radio<String>(
@@ -122,7 +105,7 @@ class _RecRefState extends State<RecRef> {
                     }
                   },
                 ),
-                title: const Text('Pending'),
+                title: const Text('Pending',style: TextStyle(fontSize: 20)),
               ),
             ],
           )),

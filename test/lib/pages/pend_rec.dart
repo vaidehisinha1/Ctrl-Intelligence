@@ -1,18 +1,5 @@
 import 'package:flutter/material.dart';
-void main() => runApp(MyApp());
-class MyApp extends StatelessWidget {
-  // This widget is the root of your application.
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Pending Received Referrals',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
-      home: PendSen(),
-    );
-  }
-}
+
 class PendSen extends StatefulWidget {
   //MyHomePage({Key key}) : super(key: key);
   @override
@@ -39,13 +26,13 @@ class _PendSenState extends State<PendSen> {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.end,
                   children: <Widget>[
-                    Text('Recevied: 10th January 21'),
+                    Text('Recevied: 10th April 21'),
                     const SizedBox(width: 1),
                     const SizedBox(width: 5),
                   ],
                 ),
                 Divider(
-                  height: 2.0,
+                  height: 10.0,
                   color: Colors.black,
                 ),
                 const ListTile(
@@ -56,13 +43,13 @@ class _PendSenState extends State<PendSen> {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.end,
                   children: <Widget>[
-                    Text('Recevied: 1st January 21'),
+                    Text('1st January 21'),
                     const SizedBox(width: 1),
                     const SizedBox(width: 5),
                   ],
                 ),
                 Divider(
-                  height: 10.0,
+                  height: 2.0,
                   color: Colors.black,
                 ),
                 const ListTile(

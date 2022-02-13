@@ -1,23 +1,6 @@
 import 'package:flutter/material.dart';
 
-void main() => runApp(MyApp());
-
-class MyApp extends StatelessWidget {
-  // This widget is the root of your application.
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Completed Sent Referrals',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
-      home: CompSen(),
-    );
-  }
-}
-
 class CompSen extends StatefulWidget {
-  //MyHomePage({Key key}) : super(key: key);
 
   @override
   _CompSenState createState() => _CompSenState();
@@ -33,7 +16,7 @@ class _CompSenState extends State<CompSen> {
       body: Center(
         child: Card(
           child: Column(
-            //mainAxisSize: MainAxisSize.min,
+
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: <Widget>[
               const ListTile(
@@ -69,13 +52,13 @@ class _CompSenState extends State<CompSen> {
                 ],
               ),
               Divider(
-                height: 10.0,
+                height: 20.0,
                 color: Colors.black,
               ),
               const ListTile(
                 leading: Icon(Icons.done),
                 title: Text('Ram Dev'),
-                subtitle: Text('Nair Hospital, Mumbai: Neurologists'),
+                subtitle: Text('Nair Hospital, Mumbai: Neurologists\n20th October'),
               ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.end,
