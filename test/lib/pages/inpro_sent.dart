@@ -38,8 +38,8 @@ class _InProSenState extends State<InProSen> {
             children: <Widget>[
               const ListTile(
                 leading: Icon(Icons.priority_high),
-                title: Text('Disha Seth'),
-                subtitle: Text('Apollo Hospital, Pune: Cardiologist'),
+                title: Text('Adesh Ghule'),
+                subtitle: Text('Aditya Birla Memorial Hospital, Pune: Anesthesiologists'),
               ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.end,
@@ -55,8 +55,8 @@ class _InProSenState extends State<InProSen> {
               ),
               const ListTile(
                 leading: Icon(Icons.priority_high),
-                title: Text('Ravi Shankar'),
-                subtitle: Text('Sassoon Hospital, Pune: Gastroenterologists'),
+                title: Text('Shree Bohara'),
+                subtitle: Text('Sassoon Hospital, Pune: Dermatologists'),
               ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.end,
@@ -73,8 +73,8 @@ class _InProSenState extends State<InProSen> {
               ),
               const ListTile(
                 leading: Icon(Icons.priority_high),
-                title: Text('Laxmi Patil'),
-                subtitle: Text('Nair Hospital, Mumbai: Neurologists\n20th October'),
+                title: Text('Ekta Kapoor'),
+                subtitle: Text('Breach Candy Hospital, Mumbai: Dentist'),
               ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.end,
