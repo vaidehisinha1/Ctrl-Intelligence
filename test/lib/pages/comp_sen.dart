@@ -74,8 +74,8 @@ class _CompSenState extends State<CompSen> {
               ),
               const ListTile(
                 leading: Icon(Icons.done),
-                title: Text('Laxmi Patil'),
-                subtitle: Text('Nair Hospital, Mumbai: Neurologists\n20th October'),
+                title: Text('Ram Dev'),
+                subtitle: Text('Nair Hospital, Mumbai: Neurologists'),
               ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.end,
