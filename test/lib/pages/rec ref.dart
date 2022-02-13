@@ -20,6 +20,7 @@ class _RecRefState extends State<RecRef> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        backgroundColor: Colors.teal[700],
         centerTitle: true,
         title: const Text(
           'Received Referrals',

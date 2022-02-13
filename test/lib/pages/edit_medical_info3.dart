@@ -1,12 +1,14 @@
 import 'package:flutter/material.dart';
-class AutofillDemo3 extends StatefulWidget {
-  const AutofillDemo3({Key? key}) : super(key: key);
+import 'package:hack/pages/home_screen.dart';
+
+class EditMed1 extends StatefulWidget {
+  const EditMed1({Key? key}) : super(key: key);
 
   @override
-  _AutofillDemo3State createState() => _AutofillDemo3State();
+  _EditMed1State createState() => _EditMed1State();
 }
 
-class _AutofillDemo3State extends State<AutofillDemo3> {
+class _EditMed1State extends State<EditMed1> {
   final _formKey = GlobalKey<FormState>();
 
   @override
@@ -15,7 +17,7 @@ class _AutofillDemo3State extends State<AutofillDemo3> {
       appBar: AppBar(
         title: const Text('Medication Reports'),
         centerTitle: true,
-        backgroundColor: Colors.purple[300],),
+        backgroundColor: Colors.teal[700],),
       body: Form(
         key: _formKey,
         child: Scrollbar(
@@ -28,7 +30,7 @@ class _AutofillDemo3State extends State<AutofillDemo3> {
                     const Text('Please Enter details  '),
                     TextFormField(
                       initialValue: 'Multiple Sclerosis',
-                      autofocus: true,
+                      autofocus: false,
                       textInputAction: TextInputAction.next,
                       decoration: const InputDecoration(
                         labelText: 'Disease diagnosed',
@@ -44,7 +46,7 @@ class _AutofillDemo3State extends State<AutofillDemo3> {
                       ),
                       autofillHints: const [AutofillHints.familyName],
                     ),
-                     TextFormField(
+                    TextFormField(
                       initialValue: 'Mother - Had MS',
                       keyboardType: TextInputType.emailAddress,
                       textInputAction: TextInputAction.next,
@@ -95,10 +97,27 @@ class _AutofillDemo3State extends State<AutofillDemo3> {
                         (widget) => [
                       widget,
                       const SizedBox(
-                        height: 24,
+                        height: 10,
                       )
                     ],
-                  )
+                  ),
+                  Container(
+                    height: 50,
+                    width: 250,
+                    decoration: BoxDecoration(
+                        color: Colors.blue, borderRadius: BorderRadius.circular(20)),
+                    child: FlatButton(
+                      onPressed: () {
+                        Navigator.of(context).pop();
+                        Navigator.push(
+                            context, MaterialPageRoute(builder: (_) => MyHomePage()));
+                      },
+                      child: Text(
+                        'Submit Changes',
+                        style: TextStyle(color: Colors.white, fontSize: 25),
+                      ),
+                    ),
+                  ),
                 ],
               ),
             ),

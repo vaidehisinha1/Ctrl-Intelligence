@@ -20,6 +20,7 @@ class _SenRefState extends State<SenRef> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        backgroundColor: Colors.teal[700],
         centerTitle: true,
         title: const Text(
           'Sent Referrals',

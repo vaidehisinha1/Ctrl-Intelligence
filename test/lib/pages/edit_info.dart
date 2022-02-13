@@ -5,16 +5,16 @@ import 'edit_hosp_info2.dart';
 import 'edit_hosp_info3.dart';
 import 'edit_medical_info2.dart';
 import 'edit_medical_info3.dart';
-//void main() => runApp(const MyApp());
 
 class EditInfo extends StatelessWidget {
   const EditInfo({Key? key}) : super(key: key);
-  static const String _title = 'Edit Referal info';
+  static const String _title = 'Edit Referral Information';
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text(_title),
+      appBar: AppBar(
+        backgroundColor: Colors.teal[700],title: const Text(_title),
         centerTitle: true,
       ),
       body: Center(
@@ -34,6 +34,7 @@ class EditInfo extends StatelessWidget {
                   TextButton(
                     child: const Text('Edit hospital info'),
                     onPressed: () {
+                      Navigator.of(context).pop();
                       Navigator.push(context, MaterialPageRoute(builder: (context) => hospital_info()));
                     },
                   ),
@@ -41,7 +42,8 @@ class EditInfo extends StatelessWidget {
                   TextButton(
                     child: const Text('Edit medical info'),
                     onPressed: () {
-                      Navigator.push(context, MaterialPageRoute(builder: (context) => AutofillDemo()));
+                      Navigator.of(context).pop();
+                      Navigator.push(context, MaterialPageRoute(builder: (context) => EditMed()));
                     },
                   ),
                   const SizedBox(width: 5),
@@ -62,6 +64,7 @@ class EditInfo extends StatelessWidget {
                   TextButton(
                     child: const Text('Edit hospital info'),
                     onPressed: () {
+                      Navigator.of(context).pop();
                       Navigator.push(context, MaterialPageRoute(builder: (context) => hospital_infoo()));
                     },
                   ),
@@ -69,7 +72,8 @@ class EditInfo extends StatelessWidget {
                   TextButton(
                     child: const Text('Edit medical info'),
                     onPressed: () {
-                      Navigator.push(context, MaterialPageRoute(builder: (context) => AutofillDemo2()));
+                      Navigator.of(context).pop();
+                      Navigator.push(context, MaterialPageRoute(builder: (context) => EditMed2()));
                     },
                   ),
                   const SizedBox(width: 5),
@@ -90,6 +94,7 @@ class EditInfo extends StatelessWidget {
                   TextButton(
                     child: const Text('Edit hospital info'),
                     onPressed: () {
+                      Navigator.of(context).pop();
                       Navigator.push(context, MaterialPageRoute(builder: (context) => hospital_info3()));
                     },
                   ),
@@ -97,7 +102,8 @@ class EditInfo extends StatelessWidget {
                   TextButton(
                     child: const Text('Edit medical info'),
                     onPressed: () {
-                      Navigator.push(context, MaterialPageRoute(builder: (context) => AutofillDemo3()));
+                      Navigator.of(context).pop();
+                      Navigator.push(context, MaterialPageRoute(builder: (context) => EditMed1()));
                     },
                   ),
                   const SizedBox(width: 5),

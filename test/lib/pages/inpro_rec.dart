@@ -10,6 +10,7 @@ class _InProSenState extends State<InProSen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        backgroundColor: Colors.teal[700],
         title: Text("In Progress Received Referrals"),
       ),
       body: Center(
@@ -19,8 +20,8 @@ class _InProSenState extends State<InProSen> {
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: <Widget>[
               const ListTile(
-                leading: Icon(Icons.priority_high),
-                title: Text('Kriti Sanon'),
+                leading: Icon(Icons.priority_high,size: 30, color: Colors.orange,),
+                title: Text('Kriti Sanon',style: TextStyle(fontWeight: FontWeight.bold),),
                 subtitle: Text('PHC - 3: Nephrologists'),
               ),
               Row(
@@ -36,8 +37,8 @@ class _InProSenState extends State<InProSen> {
                 color: Colors.black,
               ),
               const ListTile(
-                leading: Icon(Icons.priority_high),
-                title: Text('Nitin Oswal'),
+                leading: Icon(Icons.priority_high,size: 30, color: Colors.orange,),
+                title: Text('Nitin Oswal',style: TextStyle(fontWeight: FontWeight.bold),),
                 subtitle: Text('PHC-1: Pathologists'),
               ),
               Row(
@@ -54,9 +55,9 @@ class _InProSenState extends State<InProSen> {
                 color: Colors.black,
               ),
               const ListTile(
-                leading: Icon(Icons.priority_high),
-                title: Text('Pooja Patil'),
-                subtitle: Text('CHC-2: Physiatrists'),
+                leading: Icon(Icons.priority_high, size: 30, color: Colors.orange,),
+                title: Text('Pooja Patil',style: TextStyle(fontWeight: FontWeight.bold),),
+                subtitle: Text('CHC-2: Psychiatrists'),
               ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.end,

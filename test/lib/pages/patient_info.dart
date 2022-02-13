@@ -15,7 +15,8 @@ class _AutofillDemoState extends State<AutofillDemo> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('General Patient info'),
+        backgroundColor: Colors.teal[700],
+        title: const Text('General Patient Information'),
       ),
       body: Form(
         key: _formKey,
@@ -30,7 +31,7 @@ class _AutofillDemoState extends State<AutofillDemo> {
                       autofocus: false,
                       textInputAction: TextInputAction.next,
                       decoration: const InputDecoration(
-                        hintText: 'Jane',
+                        hintText: 'Deepak',
                         labelText: 'First Name',
                       ),
                       autofillHints: const [AutofillHints.givenName],
@@ -38,7 +39,7 @@ class _AutofillDemoState extends State<AutofillDemo> {
                     TextFormField(
                       textInputAction: TextInputAction.next,
                       decoration: const InputDecoration(
-                        hintText: 'Doe',
+                        hintText: 'Singh',
                         labelText: 'Last Name',
                       ),
                       autofillHints: const [AutofillHints.familyName],
@@ -56,16 +57,17 @@ class _AutofillDemoState extends State<AutofillDemo> {
                       keyboardType: TextInputType.phone,
                       textInputAction: TextInputAction.next,
                       decoration: InputDecoration(
-                        hintText: '020 24214689',
-                        labelText: 'Telephone',
+                        hintText: '9977886655',
+                        labelText: 'Phone Number',
                       ),
+                      maxLength: 10,
                       autofillHints: [AutofillHints.telephoneNumber],
                     ),
                     const TextField(
                       keyboardType: TextInputType.streetAddress,
                       textInputAction: TextInputAction.next,
                       decoration: InputDecoration(
-                        hintText: '123 4th Ave',
+                        hintText: 'Brahma Suncity, Pune',
                         labelText: 'Street Address',
                       ),
                       autofillHints: [AutofillHints.streetAddressLine1],
@@ -74,9 +76,10 @@ class _AutofillDemoState extends State<AutofillDemo> {
                       keyboardType: TextInputType.number,
                       textInputAction: TextInputAction.next,
                       decoration: InputDecoration(
-                        hintText: '12345',
+                        hintText: '123456',
                         labelText: 'Postal Code',
                       ),
+                      maxLength: 6,
                       autofillHints: [AutofillHints.postalCode],
                     ),
                     const TextField(
@@ -107,7 +110,7 @@ class _AutofillDemoState extends State<AutofillDemo> {
                         (widget) => [
                       widget,
                       const SizedBox(
-                        height: 24,
+                        height: 20,
                       )
                     ],
                   ),

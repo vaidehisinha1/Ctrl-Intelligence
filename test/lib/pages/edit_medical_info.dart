@@ -15,9 +15,10 @@ class _EditMedState extends State<EditMed> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        backgroundColor: Colors.teal[700],
         title: const Text('Medication Reports'),
         centerTitle: true,
-        backgroundColor: Colors.purple[300],),
+        ),
       body: Form(
         key: _formKey,
         child: Scrollbar(
@@ -29,12 +30,8 @@ class _EditMedState extends State<EditMed> {
                   ...[
                     const Text('Please Enter details  '),
                     TextFormField(
-
                       initialValue: 'Cardiovascular disease',
-                      autofocus: true,
-
                       autofocus: false,
-
                       textInputAction: TextInputAction.next,
                       decoration: const InputDecoration(
                         labelText: 'Disease diagnosed',
@@ -42,15 +39,14 @@ class _EditMedState extends State<EditMed> {
                       autofillHints: const [AutofillHints.givenName],
                     ),
                     TextFormField(
-                      textInputAction: TextInputAction.next,
                       initialValue: 'Stage B',
+                      textInputAction: TextInputAction.next,
                       decoration: const InputDecoration(
-                        //hintText: 'Stage 1 / Stage 3',
                         labelText: 'Severity',
                       ),
                       autofillHints: const [AutofillHints.familyName],
                     ),
-                     TextFormField(
+                    TextFormField(
                       initialValue: 'None',
                       keyboardType: TextInputType.emailAddress,
                       textInputAction: TextInputAction.next,
@@ -64,9 +60,7 @@ class _EditMedState extends State<EditMed> {
                       keyboardType: TextInputType.phone,
                       textInputAction: TextInputAction.next,
                       decoration: InputDecoration(
-
                         hintText: '120/80',
-
                         labelText: 'Blood Pressure Levels',
                       ),
                       autofillHints: [AutofillHints.telephoneNumber],
@@ -76,7 +70,6 @@ class _EditMedState extends State<EditMed> {
                       keyboardType: TextInputType.streetAddress,
                       textInputAction: TextInputAction.next,
                       decoration: InputDecoration(
-                        //hintText: 'dust / pollen / null',
                         labelText: 'Allergy ',
                       ),
                       autofillHints: [AutofillHints.streetAddressLine1],
@@ -91,10 +84,10 @@ class _EditMedState extends State<EditMed> {
                       autofillHints: [AutofillHints.postalCode],
                     ),
                     TextFormField(
-                      initialValue: 'None',
+                      initialValue: 'Null',
                       textInputAction: TextInputAction.next,
                       decoration: InputDecoration(
-                        //hintText: 'Sore throat / Null',
+
                         labelText: 'Symptoms of any other disease',
                       ),
                       autofillHints: [AutofillHints.countryName],
@@ -125,6 +118,7 @@ class _EditMedState extends State<EditMed> {
                       ),
                     ),
                   ),
+
                 ],
               ),
             ),

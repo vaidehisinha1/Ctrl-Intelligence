@@ -19,9 +19,9 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return new Scaffold(
       appBar: new AppBar(
-          backgroundColor: Colors.lightBlue[400],
+          backgroundColor: Colors.teal[700],
           title:new Text('KUSHALKSHEM',textAlign: TextAlign.center,),
-          actions: [IconButton(onPressed: () {}, icon: Image.asset('assets/Logo.png'))]
+          actions: [IconButton(onPressed: () {}, icon: Image.asset('assets/OLogo.png'))]
       ),
       body: Padding(
         padding: const EdgeInsets.all(12.0),
@@ -37,7 +37,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 icon: Icon(Icons.add,size: 40,),//icon image
                 label: Text('Referral Add',style: TextStyle(color: Colors.white, fontSize: 25)),//text to show in button
                 style: ButtonStyle(
-                  backgroundColor: MaterialStateProperty.all(Colors.green),
+                  backgroundColor: MaterialStateProperty.all(Colors.cyan[300]),
                   shape: MaterialStateProperty.all<RoundedRectangleBorder>(
                     RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(18.0),
@@ -54,7 +54,7 @@ class _MyHomePageState extends State<MyHomePage> {
               icon: Icon(Icons.dynamic_form,size: 40,),//icon image
               label: Text('Referral Edit',style: TextStyle(color: Colors.white, fontSize: 25)),//text to show in button
               style: ButtonStyle(
-                  backgroundColor: MaterialStateProperty.all(Colors.green),
+                  backgroundColor: MaterialStateProperty.all(Colors.indigo[300]),
                   shape: MaterialStateProperty.all<RoundedRectangleBorder>(
                     RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(18.0),
@@ -70,7 +70,7 @@ class _MyHomePageState extends State<MyHomePage> {
               icon: Icon(Icons.send,size: 40,),//icon image
               label: Text('Sent Referrals',style: TextStyle(color: Colors.white, fontSize: 25)),//text to show in button
               style: ButtonStyle(
-                  backgroundColor: MaterialStateProperty.all(Colors.green),
+                  backgroundColor: MaterialStateProperty.all(Colors.cyan[300]),
                   shape: MaterialStateProperty.all<RoundedRectangleBorder>(
                     RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(18.0),
@@ -87,7 +87,7 @@ class _MyHomePageState extends State<MyHomePage> {
               icon: Icon(Icons.input_rounded,size: 40,),//icon image
               label: Text('Received Referrals',style: TextStyle(color: Colors.white, fontSize: 25)),//text to show in button
               style: ButtonStyle(
-                  backgroundColor: MaterialStateProperty.all(Colors.green),
+                  backgroundColor: MaterialStateProperty.all(Colors.indigo[300]),
                   shape: MaterialStateProperty.all<RoundedRectangleBorder>(
                     RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(18.0),
@@ -103,20 +103,31 @@ class _MyHomePageState extends State<MyHomePage> {
         ),
       ),
       drawer: new Drawer(
-        backgroundColor: Colors.orange[200],
-        child: ListView(
+        backgroundColor: Colors.white,
+        child:
+        ListView(
           children: <Widget>[
-            new UserAccountsDrawerHeader(
-              decoration: BoxDecoration(color:Colors.green[400],),
-              accountName: new Text('Kamala Nehru Hospital'),
-              accountEmail: new Text('hospital@mail.com'),
-              currentAccountPicture: Image.asset('assets/K.png')
+            Container(
+              width : 200,
+              height: 200,
+              decoration: BoxDecoration(
+                  image: new DecorationImage(image: AssetImage('assets/K.png'), fit: BoxFit.cover)
+              ),
             ),
 
-            new Divider(
-              color: Colors.black,
-              height: 5.0,
+            Container(
+              width : 200,
+              height: 100,
+                color: Colors.grey[500],
+              child:
+              Column(
+                children: [
+                  Text('\n\nKamala Nehru Hospital\nhospital@mail.com',style: (TextStyle(fontWeight: FontWeight.bold, fontSize: 15)), )
+                ],
+              )
             ),
+
+
             new ListTile(
               title: new Text('ABOUT US'),
               onTap:(){
@@ -132,14 +143,17 @@ class _MyHomePageState extends State<MyHomePage> {
               height: 5.0,
             ),
 
-            new ListTile(
-              title: new Text('LOG OUT'),
-              onTap:(){
-                Navigator.of(context).pop();
-                Navigator.push(context, new MaterialPageRoute(
-                    builder: (BuildContext context)=>new LoginDemo())
-                );
-              },
+            Container(
+              color: Colors.redAccent,
+              child: new ListTile(
+                title: new Text('LOG OUT'),
+                onTap:(){
+                  Navigator.of(context).pop();
+                  Navigator.push(context, new MaterialPageRoute(
+                      builder: (BuildContext context)=>new LoginDemo())
+                  );
+                },
+              ),
             ),
           ],
         ),

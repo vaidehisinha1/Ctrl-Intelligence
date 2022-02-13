@@ -16,7 +16,7 @@ class _patrecState extends State<patrec> {
       appBar: AppBar(
         title: const Text('Medication Reports'),
         centerTitle: true,
-        backgroundColor: Colors.purple[300],),
+        backgroundColor: Colors.teal[700],),
       body: Form(
         key: _formKey,
         child: Scrollbar(
@@ -57,7 +57,7 @@ class _patrecState extends State<patrec> {
                       keyboardType: TextInputType.phone,
                       textInputAction: TextInputAction.next,
                       decoration: InputDecoration(
-                        hintText: '80 - 120',
+                        hintText: '120/80',
                         labelText: 'Blood Pressure Levels',
                       ),
                       autofillHints: [AutofillHints.telephoneNumber],

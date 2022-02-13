@@ -12,6 +12,7 @@ class _RejSenState extends State<RejSen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        backgroundColor: Colors.teal[700],
         title: Text("Rejected Sent Referrals"),
       ),
       body: Center(
@@ -21,48 +22,48 @@ class _RejSenState extends State<RejSen> {
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: <Widget>[
               const ListTile(
-                leading: Icon(Icons.cancel),
-                title: Text('Sahil Madhav'),
+                leading: Icon(Icons.cancel,size: 30, color: Colors.red),
+                title: Text('Sahil Madhav',style: TextStyle(fontWeight: FontWeight.bold),),
                 subtitle: Text('District Hospital - 2: Endocrinologists'),
               ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.end,
                 children: <Widget>[
-                  Text('Send: 8th March 21'),
+                  Text('Rejected: 8th March 21'),
                   const SizedBox(width: 1),
                   const SizedBox(width: 5),
                 ],
               ),
               Divider(
-                height: 20.0,
+                height: 15.0,
                 color: Colors.black,
               ),
               const ListTile(
-                leading: Icon(Icons.cancel),
-                title: Text('Ram Pande'),
+                leading: Icon(Icons.cancel,size: 30, color: Colors.red),
+                title: Text('Ram Pande',style: TextStyle(fontWeight: FontWeight.bold),),
                 subtitle: Text('District Hospital - 1: Hematologists'),
               ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.end,
                 children: <Widget>[
-                  Text('Send: 1st March 21'),
+                  Text('Rejected: 1st March 21'),
                   const SizedBox(width: 1),
                   const SizedBox(width: 5),
                 ],
               ),
               Divider(
-                height: 20.0,
+                height: 15.0,
                 color: Colors.black,
               ),
               const ListTile(
-                leading: Icon(Icons.cancel),
-                title: Text('James John'),
+                leading: Icon(Icons.cancel,size: 30, color: Colors.red),
+                title: Text('James John',style: TextStyle(fontWeight: FontWeight.bold),),
                   subtitle: Text('District Hospital - 3: Infectious Disease Specialists'),
               ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.end,
                 children: <Widget>[
-                  Text('Send: 27th February 21'),
+                  Text('Rejected: 27th February 21'),
                   const SizedBox(width: 1),
                   const SizedBox(width: 5),
                 ],

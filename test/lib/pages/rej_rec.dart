@@ -10,6 +10,7 @@ class _RejSenState extends State<RejSen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        backgroundColor: Colors.teal[700],
         title: Text("Rejected Received Referrals"),
       ),
       body: Center(
@@ -19,14 +20,14 @@ class _RejSenState extends State<RejSen> {
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: <Widget>[
               const ListTile(
-                leading: Icon(Icons.cancel),
-                title: Text('Ravneet Kaur'),
+                leading: Icon(Icons.cancel,size: 30, color: Colors.red),
+                title: Text('Ravneet Kaur',style: TextStyle(fontWeight: FontWeight.bold),),
                 subtitle: Text('CHC-1: Cardiologist'),
               ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.end,
                 children: <Widget>[
-                  Text('16th May 21'),
+                  Text('Rejected: 16th May 21'),
                   const SizedBox(width: 1),
                   const SizedBox(width: 5),
                 ],
@@ -36,14 +37,14 @@ class _RejSenState extends State<RejSen> {
                 color: Colors.black,
               ),
               const ListTile(
-                leading: Icon(Icons.cancel),
-                title: Text('Piyush Dhoka'),
+                leading: Icon(Icons.cancel,size: 30, color: Colors.red,),
+                title: Text('Piyush Dhoka',style: TextStyle(fontWeight: FontWeight.bold),),
                 subtitle: Text('CHC-2: Otolaryngologists'),
               ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.end,
                 children: <Widget>[
-                  Text('Revevied: 8th May 21'),
+                  Text('Rejected: 8th May 21'),
                   const SizedBox(width: 1),
                   const SizedBox(width: 5),
                 ],
@@ -53,14 +54,14 @@ class _RejSenState extends State<RejSen> {
                 color: Colors.black,
               ),
               const ListTile(
-                leading: Icon(Icons.cancel),
-                title: Text('Anand Lunawat'),
+                leading: Icon(Icons.cancel,size: 30, color: Colors.red,),
+                title: Text('Anand Lunawat',style: TextStyle(fontWeight: FontWeight.bold),),
                 subtitle: Text('PHC-1: Gastroenterologists'),
               ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.end,
                 children: <Widget>[
-                  Text('Revevied: 1st May 21'),
+                  Text('Rejected: 1st May 21'),
                   const SizedBox(width: 1),
                   const SizedBox(width: 5),
                 ],

@@ -10,6 +10,7 @@ class _PendSenState extends State<PendSen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        backgroundColor: Colors.teal[700],
         title: Text("Pending Sent Referrals"),
       ),
       body: Center(
@@ -19,14 +20,14 @@ class _PendSenState extends State<PendSen> {
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: <Widget>[
               const ListTile(
-                leading: Icon(Icons.pending),
-                title: Text('Siddharth Oswal'),
+                leading: Icon(Icons.pending,size: 30, color: Colors.lightBlue),
+                title: Text('Siddharth Oswal',style: TextStyle(fontWeight: FontWeight.bold),),
                 subtitle: Text('District Hospital-3: Nephrologists'),
               ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.end,
                 children: <Widget>[
-                  Text('Send: 10th April 21'),
+                  Text('Sent: 10th April 21'),
                   const SizedBox(width: 1),
                   const SizedBox(width: 5),
                 ],
@@ -36,14 +37,14 @@ class _PendSenState extends State<PendSen> {
                 color: Colors.black,
               ),
               const ListTile(
-                leading: Icon(Icons.pending),
-                title: Text('Siddhi Oswal'),
+                leading: Icon(Icons.pending,size: 30, color: Colors.lightBlue),
+                title: Text('Siddhi Oswal',style: TextStyle(fontWeight: FontWeight.bold),),
                 subtitle: Text('District Hospital-1: Oncologists'),
               ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.end,
                 children: <Widget>[
-                  Text('Send: 1st April 21'),
+                  Text('Sent: 1st April 21'),
                   const SizedBox(width: 1),
                   const SizedBox(width: 5),
                 ],
@@ -53,14 +54,14 @@ class _PendSenState extends State<PendSen> {
                 color: Colors.black,
               ),
               const ListTile(
-                leading: Icon(Icons.pending),
-                title: Text('Arpit Balai'),
+                leading: Icon(Icons.pending,size: 30, color: Colors.lightBlue),
+                title: Text('Arpit Balai',style: TextStyle(fontWeight: FontWeight.bold),),
                 subtitle: Text('District Hospital-2: Neurologists'),
               ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.end,
                 children: <Widget>[
-                  Text('Send: 29th March 21'),
+                  Text('Sent: 29th March 21'),
                   const SizedBox(width: 1),
                   const SizedBox(width: 5),
                 ],

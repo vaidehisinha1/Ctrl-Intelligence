@@ -12,6 +12,7 @@ class _InProSenState extends State<InProSen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        backgroundColor: Colors.teal[700],
         title: Text("In Progress Sent Referrals"),
       ),
       body:Center(
@@ -22,7 +23,7 @@ class _InProSenState extends State<InProSen> {
             children: <Widget>[
               const ListTile(
                 leading: Icon(Icons.priority_high),
-                title: Text('Adesh Ghule'),
+                title: Text('Adesh Ghule',style: TextStyle(fontWeight: FontWeight.bold),),
                 subtitle: Text('Aditya Birla Memorial Hospital, Pune: Anesthesiologists'),
               ),
               Row(
@@ -39,7 +40,7 @@ class _InProSenState extends State<InProSen> {
               ),
               const ListTile(
                 leading: Icon(Icons.priority_high),
-                title: Text('Shree Bohara'),
+                title: Text('Shree Bohara',style: TextStyle(fontWeight: FontWeight.bold),),
                 subtitle: Text('Sassoon Hospital, Pune: Dermatologists'),
               ),
               Row(
@@ -57,7 +58,7 @@ class _InProSenState extends State<InProSen> {
               ),
               const ListTile(
                 leading: Icon(Icons.priority_high),
-                title: Text('Ekta Kapoor'),
+                title: Text('Ekta Kapoor',style: TextStyle(fontWeight: FontWeight.bold),),
                 subtitle: Text('Breach Candy Hospital, Mumbai: Dentist'),
               ),
               Row(

@@ -22,9 +22,9 @@ class _DiseaseDiscState extends State<DiseaseDisc> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        backgroundColor: Colors.teal[700],
         title: const Text('Detailed Diagnosis'),
         centerTitle: true,
-        backgroundColor: Colors.purple[300],
       ),
       body: Form(
         key: _formKey,

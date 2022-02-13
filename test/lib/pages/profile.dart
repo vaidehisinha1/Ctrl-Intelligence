@@ -8,6 +8,7 @@ class _ProfileState extends State<Profile> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: new AppBar(
+          backgroundColor: Colors.teal[700],
           title: new Text('ABOUT US'),
         ),
         body: Padding(
