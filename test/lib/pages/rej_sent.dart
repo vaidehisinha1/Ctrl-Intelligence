@@ -23,7 +23,7 @@ class _RejSenState extends State<RejSen> {
               const ListTile(
                 leading: Icon(Icons.cancel),
                 title: Text('Sahil Madhav'),
-                subtitle: Text('Deccan Multispeciality Hardikar Hospital, Pune: Endocrinologists'),
+                subtitle: Text('District Hospital - 2: Endocrinologists'),
               ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.end,
@@ -40,7 +40,7 @@ class _RejSenState extends State<RejSen> {
               const ListTile(
                 leading: Icon(Icons.cancel),
                 title: Text('Ram Pande'),
-                subtitle: Text('IPC Heart Care Centre, Mumbai: Hematologists'),
+                subtitle: Text('District Hospital - 1: Hematologists'),
               ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.end,
@@ -57,7 +57,7 @@ class _RejSenState extends State<RejSen> {
               const ListTile(
                 leading: Icon(Icons.cancel),
                 title: Text('James John'),
-                  subtitle: Text('Nair Hospital, Mumbai: Infectious Disease Specialists'),
+                  subtitle: Text('District Hospital - 3: Infectious Disease Specialists'),
               ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.end,
