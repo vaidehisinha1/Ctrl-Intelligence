@@ -21,7 +21,7 @@ class _PendSenState extends State<PendSen> {
                 const ListTile(
                   leading: Icon(Icons.pending),
                   title: Text('Darshan Medankar'),
-                  subtitle: Text('Deccan Multispeciality Hardikar Hospital, Pune: Podiatrists'),
+                  subtitle: Text('CHC-2: Podiatrists'),
                 ),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.end,
@@ -38,7 +38,7 @@ class _PendSenState extends State<PendSen> {
                 const ListTile(
                   leading: Icon(Icons.pending),
                   title: Text('Rishi Purohit'),
-                  subtitle: Text('Breach Candy Hospital, Mumbai: Pulmonologists'),
+                  subtitle: Text('PHC-3: Pulmonologists'),
                 ),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.end,
@@ -55,7 +55,7 @@ class _PendSenState extends State<PendSen> {
                 const ListTile(
                   leading: Icon(Icons.pending),
                   title: Text('Grace'),
-                  subtitle: Text('Pristyn Care, Pune: Neurologists'),
+                  subtitle: Text('PHC-1: Neurologists'),
                 ),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.end,
