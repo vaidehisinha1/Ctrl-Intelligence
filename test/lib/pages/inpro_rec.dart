@@ -21,7 +21,7 @@ class _InProSenState extends State<InProSen> {
               const ListTile(
                 leading: Icon(Icons.priority_high),
                 title: Text('Kriti Sanon'),
-                subtitle: Text('Nair Hospital, Mumbai: Nephrologists'),
+                subtitle: Text('PHC - 3: Nephrologists'),
               ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.end,
@@ -38,7 +38,7 @@ class _InProSenState extends State<InProSen> {
               const ListTile(
                 leading: Icon(Icons.priority_high),
                 title: Text('Nitin Oswal'),
-                subtitle: Text('Poona Hospital, Pune: Pathologists'),
+                subtitle: Text('PHC-1: Pathologists'),
               ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.end,
@@ -56,7 +56,7 @@ class _InProSenState extends State<InProSen> {
               const ListTile(
                 leading: Icon(Icons.priority_high),
                 title: Text('Pooja Patil'),
-                subtitle: Text('S L Raheja Hospital, Mumbai: Physiatrists'),
+                subtitle: Text('CHC-2: Physiatrists'),
               ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.end,
