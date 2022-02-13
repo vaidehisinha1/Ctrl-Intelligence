@@ -38,8 +38,8 @@ class _RejSenState extends State<RejSen> {
             children: <Widget>[
               const ListTile(
                 leading: Icon(Icons.cancel),
-                title: Text('Disha Seth'),
-                subtitle: Text('Apollo Hospital, Pune: Cardiologist'),
+                title: Text('Sahil Madhav'),
+                subtitle: Text('Deccan Multispeciality Hardikar Hospital, Pune: Endocrinologists'),
               ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.end,
@@ -55,13 +55,13 @@ class _RejSenState extends State<RejSen> {
               ),
               const ListTile(
                 leading: Icon(Icons.cancel),
-                title: Text('Ravi Shankar'),
-                subtitle: Text('Sassoon Hospital, Pune: Gastroenterologists'),
+                title: Text('Ram Pande'),
+                subtitle: Text('IPC Heart Care Centre, Mumbai: Hematologists'),
               ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.end,
                 children: <Widget>[
-                  Text('Send: 8th March 21'),
+                  Text('Send: 1st March 21'),
                   const SizedBox(width: 1),
                   const SizedBox(width: 5),
                 ],
@@ -72,13 +72,13 @@ class _RejSenState extends State<RejSen> {
               ),
               const ListTile(
                 leading: Icon(Icons.cancel),
-                title: Text('Laxmi Patil'),
-                  subtitle: Text('Nair Hospital, Mumbai: Neurologists'),
+                title: Text('James John'),
+                  subtitle: Text('Nair Hospital, Mumbai: Infectious Disease Specialists'),
               ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.end,
                 children: <Widget>[
-                  Text('Send: 8th March 21'),
+                  Text('Send: 27th February 21'),
                   const SizedBox(width: 1),
                   const SizedBox(width: 5),
                 ],
