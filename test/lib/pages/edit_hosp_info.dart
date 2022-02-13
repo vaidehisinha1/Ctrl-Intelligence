@@ -11,10 +11,10 @@ class hospital_info extends StatefulWidget {
 
 class _hospital_infoState extends State<hospital_info> {
   final _formKey = GlobalKey<FormState>();
-   String _currentItemSelected = 'Select a department';
+   String _currentItemSelected = 'Cardiologists';
   final _currencies = ['Select a department','Allergists', 'Anesthesiologists', 'Cardiologists', 'Colon and Rectal Surgeons', 'Dermatologists','Dentist','Endocrinologists','Gastroenterologists', 'Hematologists','Infectious Disease Specialists','Internists','Medical Geneticists','Nephrologists','Neurologists','Obstetricians and Gynecologists','Oncologists','Ophthalmologists','Osteopaths','Otolaryngologists','Orthopaedic surgeon','Pathologists','Pediatricians','Physiatrists','Plastic Surgeons','Podiatrists','Preventive Medicine Specialists','Psychiatrists','Pulmonologists','Radiologists','Rheumatologists','Sports Medicine Specialists','General Surgeons','Urologists','Veterinarian'];
   
-  String _current = 'Select a hospital';
+  String _current = 'Apollo Hospital, Pune';
   final _hosp = ['Select a hospital','Aditya Birla Memorial Hospital, Pune','Apollo Hospital, Pune','Breach Candy Hospital, Mumbai','Deccan Multispeciality Hardikar Hospital, Pune','IPC Heart Care Centre, Mumbai','Jaslok Hospital, Mumbai','Nair Hospital, Mumbai','Poona Hospital, Pune','Pristyn Care, Pune','Sassoon Hospital, Pune','S L Raheja Hospital, Mumbai'];
   // String? _current = 'Rupees';
   @override
