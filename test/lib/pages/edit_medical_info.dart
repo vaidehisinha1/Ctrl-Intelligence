@@ -58,7 +58,7 @@ class _EditMedState extends State<EditMed> {
                       keyboardType: TextInputType.phone,
                       textInputAction: TextInputAction.next,
                       decoration: InputDecoration(
-                        hintText: '80 - 120',
+                        hintText: '120/80',
                         labelText: 'Blood Pressure Levels',
                       ),
                       autofillHints: [AutofillHints.telephoneNumber],
