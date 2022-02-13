@@ -26,7 +26,7 @@ class EditInfo extends StatelessWidget {
               const ListTile(
                 leading: Icon(Icons.edit),
                 title: Text('Ram Kumar'),
-                subtitle: Text('Apollo Hospital, Pune: Cardiologist\n2nd July 21'),
+                subtitle: Text('PHC-2: Cardiologist\n2nd July 21'),
               ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.end,
@@ -34,7 +34,6 @@ class EditInfo extends StatelessWidget {
                   TextButton(
                     child: const Text('Edit hospital info'),
                     onPressed: () {
-                      Navigator.of(context).pop();
                       Navigator.push(context, MaterialPageRoute(builder: (context) => hospital_info()));
                     },
                   ),
@@ -42,8 +41,7 @@ class EditInfo extends StatelessWidget {
                   TextButton(
                     child: const Text('Edit medical info'),
                     onPressed: () {
-                      Navigator.of(context).pop();
-                      Navigator.push(context, MaterialPageRoute(builder: (context) => EditMed()));
+                      Navigator.push(context, MaterialPageRoute(builder: (context) => AutofillDemo()));
                     },
                   ),
                   const SizedBox(width: 5),
@@ -56,7 +54,7 @@ class EditInfo extends StatelessWidget {
               const ListTile(
                 leading: Icon(Icons.edit),
                 title: Text('Ravi Shankar'),
-                subtitle: Text('Sassoon Hospital, Pune: Gastroenterologists\n3rd August 21'),
+                subtitle: Text('CHC-1: Gastroenterologists\n3rd August 21'),
               ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.end,
@@ -64,24 +62,14 @@ class EditInfo extends StatelessWidget {
                   TextButton(
                     child: const Text('Edit hospital info'),
                     onPressed: () {
-
-                      
-
-                      Navigator.of(context).pop();
                       Navigator.push(context, MaterialPageRoute(builder: (context) => hospital_infoo()));
-
                     },
                   ),
                   const SizedBox(width: 1),
                   TextButton(
                     child: const Text('Edit medical info'),
                     onPressed: () {
-
-                     
-
-                      Navigator.of(context).pop();
-                       Navigator.push(context, MaterialPageRoute(builder: (context) => AutofillDemo2()));
-
+                      Navigator.push(context, MaterialPageRoute(builder: (context) => AutofillDemo2()));
                     },
                   ),
                   const SizedBox(width: 5),
@@ -94,7 +82,7 @@ class EditInfo extends StatelessWidget {
               const ListTile(
                 leading: Icon(Icons.edit),
                 title: Text('Laxmi Patil'),
-                subtitle: Text('Nair Hospital, Mumbai: Neurologists\n20th October'),
+                subtitle: Text('CHC-2: Neurologists\n20th October'),
               ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.end,
@@ -102,25 +90,14 @@ class EditInfo extends StatelessWidget {
                   TextButton(
                     child: const Text('Edit hospital info'),
                     onPressed: () {
-
-                      
-
-                      Navigator.of(context).pop();
-                     Navigator.push(context, MaterialPageRoute(builder: (context) => hospital_info3()));
-
-
+                      Navigator.push(context, MaterialPageRoute(builder: (context) => hospital_info3()));
                     },
                   ),
                   const SizedBox(width: 1),
                   TextButton(
                     child: const Text('Edit medical info'),
                     onPressed: () {
-
-
-
-                      Navigator.of(context).pop();
                       Navigator.push(context, MaterialPageRoute(builder: (context) => AutofillDemo3()));
-
                     },
                   ),
                   const SizedBox(width: 5),
