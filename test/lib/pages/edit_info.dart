@@ -3,7 +3,9 @@ import 'edit_hosp_info.dart';
 import 'edit_medical_info.dart';
 import 'edit_hosp_info2.dart';
 import 'edit_hosp_info3.dart';
-
+import 'edit_medical_info2.dart';
+import 'edit_medical_info3.dart';
+//void main() => runApp(const MyApp());
 
 class EditInfo extends StatelessWidget {
   const EditInfo({Key? key}) : super(key: key);
@@ -62,6 +64,9 @@ class EditInfo extends StatelessWidget {
                   TextButton(
                     child: const Text('Edit hospital info'),
                     onPressed: () {
+
+                      
+
                       Navigator.of(context).pop();
                       Navigator.push(context, MaterialPageRoute(builder: (context) => hospital_infoo()));
 
@@ -71,8 +76,12 @@ class EditInfo extends StatelessWidget {
                   TextButton(
                     child: const Text('Edit medical info'),
                     onPressed: () {
+
+                     
+
                       Navigator.of(context).pop();
-                      Navigator.push(context, MaterialPageRoute(builder: (context) => EditMed()));
+                       Navigator.push(context, MaterialPageRoute(builder: (context) => AutofillDemo2()));
+
                     },
                   ),
                   const SizedBox(width: 5),
@@ -93,8 +102,12 @@ class EditInfo extends StatelessWidget {
                   TextButton(
                     child: const Text('Edit hospital info'),
                     onPressed: () {
+
+                      
+
                       Navigator.of(context).pop();
                      Navigator.push(context, MaterialPageRoute(builder: (context) => hospital_info3()));
+
 
                     },
                   ),
@@ -102,8 +115,12 @@ class EditInfo extends StatelessWidget {
                   TextButton(
                     child: const Text('Edit medical info'),
                     onPressed: () {
+
+
+
                       Navigator.of(context).pop();
-                      Navigator.push(context, MaterialPageRoute(builder: (context) => EditMed()));
+                      Navigator.push(context, MaterialPageRoute(builder: (context) => AutofillDemo3()));
+
                     },
                   ),
                   const SizedBox(width: 5),
