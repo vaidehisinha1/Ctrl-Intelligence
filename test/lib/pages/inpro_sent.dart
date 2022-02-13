@@ -1,21 +1,5 @@
 import 'package:flutter/material.dart';
 
-void main() => runApp(MyApp());
-
-class MyApp extends StatelessWidget {
-  // This widget is the root of your application.
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'In Progress Sent Referrals',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
-      home: InProSen(),
-    );
-  }
-}
-
 class InProSen extends StatefulWidget {
   //MyHomePage({Key key}) : super(key: key);
 
@@ -38,8 +22,8 @@ class _InProSenState extends State<InProSen> {
             children: <Widget>[
               const ListTile(
                 leading: Icon(Icons.priority_high),
-                title: Text('Disha Seth'),
-                subtitle: Text('Apollo Hospital, Pune: Cardiologist'),
+                title: Text('Adesh Ghule'),
+                subtitle: Text('Aditya Birla Memorial Hospital, Pune: Anesthesiologists'),
               ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.end,
@@ -55,8 +39,8 @@ class _InProSenState extends State<InProSen> {
               ),
               const ListTile(
                 leading: Icon(Icons.priority_high),
-                title: Text('Ravi Shankar'),
-                subtitle: Text('Sassoon Hospital, Pune: Gastroenterologists'),
+                title: Text('Shree Bohara'),
+                subtitle: Text('Sassoon Hospital, Pune: Dermatologists'),
               ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.end,
@@ -73,8 +57,8 @@ class _InProSenState extends State<InProSen> {
               ),
               const ListTile(
                 leading: Icon(Icons.priority_high),
-                title: Text('Laxmi Patil'),
-                subtitle: Text('Nair Hospital, Mumbai: Neurologists\n20th October'),
+                title: Text('Ekta Kapoor'),
+                subtitle: Text('Breach Candy Hospital, Mumbai: Dentist'),
               ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.end,

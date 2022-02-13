@@ -1,21 +1,5 @@
 import 'package:flutter/material.dart';
 
-void main() => runApp(MyApp());
-
-class MyApp extends StatelessWidget {
-  // This widget is the root of your application.
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Rejected Sent Referrals',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
-      home: RejSen(),
-    );
-  }
-}
-
 class RejSen extends StatefulWidget {
   //MyHomePage({Key key}) : super(key: key);
 
@@ -38,8 +22,8 @@ class _RejSenState extends State<RejSen> {
             children: <Widget>[
               const ListTile(
                 leading: Icon(Icons.cancel),
-                title: Text('Disha Seth'),
-                subtitle: Text('Apollo Hospital, Pune: Cardiologist'),
+                title: Text('Sahil Madhav'),
+                subtitle: Text('Deccan Multispeciality Hardikar Hospital, Pune: Endocrinologists'),
               ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.end,
@@ -50,35 +34,35 @@ class _RejSenState extends State<RejSen> {
                 ],
               ),
               Divider(
-                height: 10.0,
+                height: 20.0,
                 color: Colors.black,
               ),
               const ListTile(
                 leading: Icon(Icons.cancel),
-                title: Text('Ravi Shankar'),
-                subtitle: Text('Sassoon Hospital, Pune: Gastroenterologists'),
+                title: Text('Ram Pande'),
+                subtitle: Text('IPC Heart Care Centre, Mumbai: Hematologists'),
               ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.end,
                 children: <Widget>[
-                  Text('Send: 8th March 21'),
+                  Text('Send: 1st March 21'),
                   const SizedBox(width: 1),
                   const SizedBox(width: 5),
                 ],
               ),
               Divider(
-                height: 10.0,
+                height: 20.0,
                 color: Colors.black,
               ),
               const ListTile(
                 leading: Icon(Icons.cancel),
-                title: Text('Laxmi Patil'),
-                  subtitle: Text('Nair Hospital, Mumbai: Neurologists'),
+                title: Text('James John'),
+                  subtitle: Text('Nair Hospital, Mumbai: Infectious Disease Specialists'),
               ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.end,
                 children: <Widget>[
-                  Text('Send: 8th March 21'),
+                  Text('Send: 27th February 21'),
                   const SizedBox(width: 1),
                   const SizedBox(width: 5),
                 ],

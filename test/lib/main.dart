@@ -40,7 +40,7 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Container(
         color: Colors.white,
-        child: Image.asset('assets/back.png')
+        child: Image.asset('assets/Logo.png')
     );
   }
 }

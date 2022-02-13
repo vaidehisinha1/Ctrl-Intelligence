@@ -1,18 +1,5 @@
 import 'package:flutter/material.dart';
-void main() => runApp(MyApp());
-class MyApp extends StatelessWidget {
-  // This widget is the root of your application.
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Pending Sent Referrals',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
-      home: PendSen(),
-    );
-  }
-}
+
 class PendSen extends StatefulWidget {
   //MyHomePage({Key key}) : super(key: key);
   @override
@@ -33,8 +20,8 @@ class _PendSenState extends State<PendSen> {
             children: <Widget>[
               const ListTile(
                 leading: Icon(Icons.pending),
-                title: Text('Disha Seth'),
-                subtitle: Text('Apollo Hospital, Pune: Cardiologist'),
+                title: Text('Siddharth Oswal'),
+                subtitle: Text('Poona Hospital, Pune: Nephrologists'),
               ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.end,
@@ -50,13 +37,13 @@ class _PendSenState extends State<PendSen> {
               ),
               const ListTile(
                 leading: Icon(Icons.pending),
-                title: Text('Ravi Shankar'),
-                subtitle: Text('Sassoon Hospital, Pune: Gastroenterologists'),
+                title: Text('Siddhi Oswal'),
+                subtitle: Text('Poona Hospital, Pune: Oncologists'),
               ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.end,
                 children: <Widget>[
-                  Text('Send: 1th April 21'),
+                  Text('Send: 1st April 21'),
                   const SizedBox(width: 1),
                   const SizedBox(width: 5),
                 ],
@@ -67,8 +54,8 @@ class _PendSenState extends State<PendSen> {
               ),
               const ListTile(
                 leading: Icon(Icons.pending),
-                title: Text('Laxmi Patil'),
-                subtitle: Text('Nair Hospital, Mumbai: Neurologists'),
+                title: Text('Arpit Balai'),
+                subtitle: Text('Pristyn Care, Pune: Neurologists'),
               ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.end,
