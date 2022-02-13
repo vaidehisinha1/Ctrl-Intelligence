@@ -33,13 +33,13 @@ class _InProSenState extends State<InProSen> {
             children: <Widget>[
               const ListTile(
                 leading: Icon(Icons.priority_high),
-                title: Text('Disha Seth'),
-                subtitle: Text('Apollo Hospital, Pune: Cardiologist'),
+                title: Text('Kriti Sanon'),
+                subtitle: Text('Nair Hospital, Mumbai: Nephrologists'),
               ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.end,
                 children: <Widget>[
-                  Text('Recevied: 15th December 21'),
+                  Text('Recevied: 15th November 21'),
                   const SizedBox(width: 1),
                   const SizedBox(width: 5),
                 ],
@@ -50,13 +50,13 @@ class _InProSenState extends State<InProSen> {
               ),
               const ListTile(
                 leading: Icon(Icons.priority_high),
-                title: Text('Ravi Shankar'),
-                subtitle: Text('Sassoon Hospital, Pune: Gastroenterologists'),
+                title: Text('Nitin Oswal'),
+                subtitle: Text('Poona Hospital, Pune: Pathologists'),
               ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.end,
                 children: <Widget>[
-                  Text('Recevied: 1st December 21'),
+                  Text('Recevied: 1st November 21'),
 
                   const SizedBox(width: 1),
                   const SizedBox(width: 5),
@@ -68,13 +68,13 @@ class _InProSenState extends State<InProSen> {
               ),
               const ListTile(
                 leading: Icon(Icons.priority_high),
-                title: Text('Laxmi Patil'),
-                subtitle: Text('Nair Hospital, Mumbai: Neurologists\n20th October'),
+                title: Text('Pooja Patil'),
+                subtitle: Text('S L Raheja Hospital, Mumbai: Physiatrists'),
               ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.end,
                 children: <Widget>[
-                  Text('Recevied: 11th November 21'),
+                  Text('Recevied: 11th October 21'),
                   const SizedBox(width: 1),
                   const SizedBox(width: 5),
                 ],
