@@ -33,13 +33,30 @@ class _PendSenState extends State<PendSen> {
               children: <Widget>[
                 const ListTile(
                   leading: Icon(Icons.pending),
-                  title: Text('Disha Seth'),
-                  subtitle: Text('Apollo Hospital, Pune: Cardiologist'),
+                  title: Text('Darshan Medankar'),
+                  subtitle: Text('Deccan Multispeciality Hardikar Hospital, Pune: Podiatrists'),
                 ),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.end,
                   children: <Widget>[
-                    Text('Recevied: 10th April 21'),
+                    Text('Recevied: 10th January 21'),
+                    const SizedBox(width: 1),
+                    const SizedBox(width: 5),
+                  ],
+                ),
+                Divider(
+                  height: 2.0,
+                  color: Colors.black,
+                ),
+                const ListTile(
+                  leading: Icon(Icons.pending),
+                  title: Text('Rishi Purohit'),
+                  subtitle: Text('Breach Candy Hospital, Mumbai: Pulmonologists'),
+                ),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.end,
+                  children: <Widget>[
+                    Text('Recevied: 1st January 21'),
                     const SizedBox(width: 1),
                     const SizedBox(width: 5),
                   ],
@@ -50,30 +67,13 @@ class _PendSenState extends State<PendSen> {
                 ),
                 const ListTile(
                   leading: Icon(Icons.pending),
-                  title: Text('Ravi Shankar'),
-                  subtitle: Text('Sassoon Hospital, Pune: Gastroenterologists'),
+                  title: Text('Grace'),
+                  subtitle: Text('Pristyn Care, Pune: Neurologists'),
                 ),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.end,
                   children: <Widget>[
-                    Text('Recevied: 1th April 21'),
-                    const SizedBox(width: 1),
-                    const SizedBox(width: 5),
-                  ],
-                ),
-                Divider(
-                  height: 10.0,
-                  color: Colors.black,
-                ),
-                const ListTile(
-                  leading: Icon(Icons.pending),
-                  title: Text('Laxmi Patil'),
-                  subtitle: Text('Nair Hospital, Mumbai: Neurologists'),
-                ),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.end,
-                  children: <Widget>[
-                    Text('Recevied: 29th March 21'),
+                    Text('Recevied: 29th December 20'),
                     const SizedBox(width: 1),
                     const SizedBox(width: 5),
                   ],
