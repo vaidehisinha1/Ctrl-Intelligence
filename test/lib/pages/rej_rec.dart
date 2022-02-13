@@ -33,13 +33,13 @@ class _RejSenState extends State<RejSen> {
             children: <Widget>[
               const ListTile(
                 leading: Icon(Icons.cancel),
-                title: Text('Disha Seth'),
-                subtitle: Text('Apollo Hospital, Pune: Cardiologist'),
+                title: Text('Ravneet Kaur'),
+                subtitle: Text('IPC Heart Care Centre, Mumbai: Cardiologist'),
               ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.end,
                 children: <Widget>[
-                  Text('Revevied: 8th March 21'),
+                  Text('Revevied: 16th May 21'),
                   const SizedBox(width: 1),
                   const SizedBox(width: 5),
                 ],
@@ -50,30 +50,30 @@ class _RejSenState extends State<RejSen> {
               ),
               const ListTile(
                 leading: Icon(Icons.cancel),
-                title: Text('Ravi Shankar'),
+                title: Text('Piyush Dhoka'),
+                subtitle: Text('Pristyn Care, Pune: Otolaryngologists'),
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.end,
+                children: <Widget>[
+                  Text('Revevied: 8th May 21'),
+                  const SizedBox(width: 1),
+                  const SizedBox(width: 5),
+                ],
+              ),
+              Divider(
+                height: 10.0,
+                color: Colors.black,
+              ),
+              const ListTile(
+                leading: Icon(Icons.cancel),
+                title: Text('Anand Lunawat'),
                 subtitle: Text('Sassoon Hospital, Pune: Gastroenterologists'),
               ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.end,
                 children: <Widget>[
-                  Text('Revevied: 8th March 21'),
-                  const SizedBox(width: 1),
-                  const SizedBox(width: 5),
-                ],
-              ),
-              Divider(
-                height: 10.0,
-                color: Colors.black,
-              ),
-              const ListTile(
-                leading: Icon(Icons.cancel),
-                title: Text('Laxmi Patil'),
-                subtitle: Text('Nair Hospital, Mumbai: Neurologists\n20th October'),
-              ),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.end,
-                children: <Widget>[
-                  Text('Revevied: 8th March 21'),
+                  Text('Revevied: 1st May 21'),
                   const SizedBox(width: 1),
                   const SizedBox(width: 5),
                 ],
